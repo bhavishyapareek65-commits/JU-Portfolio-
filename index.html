@@ -1,81 +1,82 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html class="scroll-smooth" lang="en">
 <head>
   <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"/>
-  <meta name="description" content="Studio Kai — Spatial &amp; Industrial Design by Kai Thorne. Designing sensory spaces, objects, and tactile structures grounded in earthy materiality and timeless simplicity."/>
-  <meta name="keywords" content="Spatial Design, Industrial Design, Architecture, Eyewear, Tactile Objects, Kai Thorne, Studio Kai"/>
-  <meta name="author" content="Kai Thorne"/>
-  <meta property="og:title" content="Studio Kai — Spatial &amp; Industrial Designer"/>
-  <meta property="og:description" content="Designing sensory spaces, objects, and tactile structures grounded in earthy materiality."/>
-  <meta property="og:image" content="assets/kai/profile.jpg"/>
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/>
+  <meta name="description" content="Bhavishya Pareek — UI/UX Designer, Web Designer, Data Scientist &amp; AI/ML Engineer. Portfolio &amp; Engineering Lab."/>
+  <meta name="keywords" content="Bhavishya Pareek, UI/UX Design, Web Design, Data Science, AI/ML Engineer, Three.js, Spatial Computing"/>
+  <meta name="author" content="Bhavishya Pareek"/>
+  <meta property="og:title" content="Bhavishya Pareek — Portfolio &amp; Engineering Lab"/>
+  <meta property="og:description" content="Designing sensory spaces, objects, and tactile structures grounded in earthy materiality, synthesized with cutting-edge intelligent systems."/>
+  <meta property="og:image" content="assets/bhavishya/profile.jpg"/>
 
-  <title>Studio Kai — Kai Thorne &bull; Spatial &amp; Industrial Designer</title>
+  <title>Bhavishya Pareek &mdash; Portfolio &amp; Engineering Lab</title>
 
   <!-- Google Fonts: Rubik & Material Symbols Outlined -->
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&amp;display=swap" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
-
-  <!-- Three.js library -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+  <!-- Three.js for Interactive 3D Specs Geometry -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
   <script id="tailwind-config">
     tailwind.config = {
       darkMode: "class",
       theme: {
         extend: {
           colors: {
-            "on-background": "#1b1c1a",
+            "on-error-container": "#93000a",
+            "surface-dim": "#dbdad6",
+            "on-tertiary": "#ffffff",
+            "inverse-on-surface": "#f2f1ed",
+            "surface-container": "#efeeea",
+            "on-secondary": "#ffffff",
+            "on-surface": "#1b1c1a",
             "on-surface-variant": "#51443c",
+            "secondary": "#5a6240",
             "surface-variant": "#e3e2df",
-            "on-secondary-fixed": "#181e04",
-            "primary-fixed-dim": "#f9b98d",
-            "error": "#ba1a1a",
-            "surface-container-lowest": "#ffffff",
-            "tertiary-fixed-dim": "#fab985",
-            "surface-container-low": "#f5f4f0",
-            "secondary-fixed": "#dee7bc",
-            "on-tertiary-container": "#d29665",
-            "on-error": "#ffffff",
-            "primary-fixed": "#ffdcc6",
+            "background": "#faf9f5",
             "on-primary": "#ffffff",
             "tertiary": "#3b1c00",
-            "secondary-fixed-dim": "#c2cba1",
-            "on-tertiary": "#ffffff",
-            "on-tertiary-fixed": "#2e1500",
-            "on-primary-fixed-variant": "#683c1a",
-            "on-tertiary-fixed-variant": "#683c12",
-            "surface-container-high": "#e9e8e4",
-            "surface-bright": "#faf9f5",
-            "primary-container": "#582f0e",
-            "on-primary-fixed": "#301400",
             "inverse-primary": "#f9b98d",
-            "on-error-container": "#93000a",
-            "tertiary-container": "#582f05",
-            "surface": "#faf9f5",
-            "on-primary-container": "#d2966d",
-            "surface-tint": "#84532f",
-            "tertiary-fixed": "#ffdcc2",
-            "inverse-on-surface": "#f2f1ed",
-            "on-secondary-container": "#5e6644",
-            "on-surface": "#1b1c1a",
-            "surface-container": "#efeeea",
-            "primary": "#3d1b00",
-            "secondary": "#5a6240",
-            "secondary-container": "#dce4b9",
-            "inverse-surface": "#30312e",
-            "error-container": "#ffdad6",
-            "surface-dim": "#dbdad6",
+            "on-primary-fixed": "#301400",
+            "surface-container-lowest": "#ffffff",
             "surface-container-highest": "#e3e2df",
-            "background": "#faf9f5",
-            "on-secondary-fixed-variant": "#424a2a",
-            "on-secondary": "#ffffff",
+            "on-primary-fixed-variant": "#683c1a",
+            "on-secondary-fixed": "#181e04",
+            "outline-variant": "#d6c3b8",
+            "on-tertiary-fixed": "#2e1500",
+            "surface-container-low": "#f5f4f0",
+            "secondary-container": "#dce4b9",
+            "on-background": "#1b1c1a",
+            "inverse-surface": "#30312e",
+            "secondary-fixed": "#dee7bc",
+            "primary": "#3d1b00",
+            "tertiary-fixed-dim": "#fab985",
+            "on-tertiary-fixed-variant": "#683c12",
+            "error": "#ba1a1a",
+            "on-primary-container": "#d2966d",
+            "tertiary-fixed": "#ffdcc2",
+            "primary-container": "#582f0e",
+            "primary-fixed": "#ffdcc6",
             "outline": "#84746b",
-            "outline-variant": "#d6c3b8"
+            "tertiary-container": "#582f05",
+            "on-error": "#ffffff",
+            "on-secondary-fixed-variant": "#424a2a",
+            "surface": "#faf9f5",
+            "secondary-fixed-dim": "#c2cba1",
+            "surface-tint": "#84532f",
+            "surface-container-high": "#e9e8e4",
+            "on-tertiary-container": "#d29665",
+            "primary-fixed-dim": "#f9b98d",
+            "surface-bright": "#faf9f5",
+            "error-container": "#ffdad6",
+            "on-secondary-container": "#5e6644"
           },
           borderRadius: {
             "DEFAULT": "0.25rem",
@@ -91,24 +92,31 @@
             "space-sm": "0.5rem",
             "space-md": "1rem",
             "space-lg": "1.5rem",
-            "space-xl": "2.5rem",
-            "space-2xl": "4rem"
+            "space-xl": "2.5rem"
           },
           fontFamily: {
-            sans: ["Rubik", "-apple-system", "BlinkMacSystemFont", "sans-serif"],
-            rubik: ["Rubik", "sans-serif"]
+            "label-sm": ["Rubik", "sans-serif"],
+            "headline-xl": ["Rubik", "sans-serif"],
+            "headline-lg": ["Rubik", "sans-serif"],
+            "headline-xl-mobile": ["Rubik", "sans-serif"],
+            "body-sm": ["Rubik", "sans-serif"],
+            "body-lg": ["Rubik", "sans-serif"],
+            "label-lg": ["Rubik", "sans-serif"],
+            "body-md": ["Rubik", "sans-serif"],
+            "label-md": ["Rubik", "sans-serif"],
+            "headline-md": ["Rubik", "sans-serif"]
           },
           fontSize: {
             "label-sm": ["10px", { "lineHeight": "12px", "letterSpacing": "0.1em", "fontWeight": "500" }],
-            "label-md": ["11px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "600" }],
-            "label-lg": ["13px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "500" }],
-            "body-sm": ["13px", { "lineHeight": "19px", "letterSpacing": "0.01em", "fontWeight": "400" }],
-            "body-md": ["15px", { "lineHeight": "23px", "letterSpacing": "0em", "fontWeight": "400" }],
-            "body-lg": ["17px", { "lineHeight": "26px", "letterSpacing": "-0.005em", "fontWeight": "300" }],
-            "headline-md": ["20px", { "lineHeight": "26px", "letterSpacing": "-0.015em", "fontWeight": "500" }],
+            "headline-xl": ["40px", { "lineHeight": "46px", "letterSpacing": "-0.03em", "fontWeight": "600" }],
             "headline-lg": ["26px", { "lineHeight": "32px", "letterSpacing": "-0.02em", "fontWeight": "500" }],
             "headline-xl-mobile": ["32px", { "lineHeight": "38px", "letterSpacing": "-0.025em", "fontWeight": "600" }],
-            "headline-xl": ["42px", { "lineHeight": "48px", "letterSpacing": "-0.03em", "fontWeight": "600" }]
+            "body-sm": ["13px", { "lineHeight": "19px", "letterSpacing": "0.01em", "fontWeight": "400" }],
+            "body-lg": ["17px", { "lineHeight": "26px", "letterSpacing": "-0.005em", "fontWeight": "300" }],
+            "label-lg": ["13px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "500" }],
+            "body-md": ["15px", { "lineHeight": "23px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "label-md": ["11px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "600" }],
+            "headline-md": ["20px", { "lineHeight": "26px", "letterSpacing": "-0.015em", "fontWeight": "500" }]
           }
         }
       }
@@ -116,68 +124,135 @@
   </script>
 
   <style>
-    * {
-      box-sizing: border-box;
-      -webkit-font-smoothing: antialiased;
+    @layer base {
+      html, body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        scroll-behavior: smooth;
+      }
+      body {
+        overscroll-behavior: none;
+      }
+      .pb-safe {
+        padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 16px);
+      }
+      .pt-safe {
+        padding-top: env(safe-area-inset-top, 0px);
+      }
+      main > :first-child {
+        margin-top: 0 !important;
+      }
+      main > :last-child {
+        margin-bottom: 0 !important;
+      }
     }
-    body {
-      font-family: 'Rubik', sans-serif;
-      background-color: #faf9f5;
-      color: #1b1c1a;
-      overscroll-behavior-y: none;
-    }
-    .pb-safe {
-      padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 16px);
-    }
-    .pt-safe {
-      padding-top: env(safe-area-inset-top, 0px);
-    }
+
     ::-webkit-scrollbar {
-      width: 6px;
-      height: 6px;
+      display: none;
     }
-    ::-webkit-scrollbar-track {
-      background: #faf9f5;
+
+    /* Fluid Transition & Pulse Helpers */
+    .ease-fluid {
+      transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
     }
-    ::-webkit-scrollbar-thumb {
-      background: #d6c3b8;
-      border-radius: 9999px;
+
+    .section-focus-pulse {
+      animation: sectionHighlight 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
     }
-    ::-webkit-scrollbar-thumb:hover {
-      background: #84746b;
+
+    @keyframes sectionHighlight {
+      0% { box-shadow: 0 0 0 0 rgba(88, 47, 14, 0); }
+      30% { box-shadow: 0 0 0 8px rgba(88, 47, 14, 0.12); }
+      100% { box-shadow: 0 0 0 0 rgba(88, 47, 14, 0); }
     }
-    .material-symbols-outlined {
-      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-      line-height: 1;
-      display: inline-block;
-      vertical-align: middle;
+
+    /* Accordion Max Height Transition */
+    .accordion-content {
+      max-height: 0;
+      opacity: 0;
+      overflow: hidden;
+      transition: max-height 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.35s ease, padding 0.35s ease;
     }
-    /* Smooth canvas touch */
-    #threejs-container-ANIMATION_1 canvas {
-      touch-action: none;
-      display: block;
-      width: 100% !important;
-      height: 100% !important;
-      outline: none;
+
+    .accordion-content.expanded {
+      max-height: 240px;
+      opacity: 1;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
     }
-    /* Fade transitions for project filtering */
-    .project-item {
-      transition: opacity 0.25s cubic-bezier(0.16, 1, 0.3, 1), transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+
+    /* Project Filter Transitions */
+    .project-card {
+      transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+      transform-origin: top center;
+    }
+
+    .project-card.item-hidden {
+      opacity: 0;
+      transform: translateY(12px) scale(0.97);
+      pointer-events: none;
+      display: none;
+    }
+
+    .project-card.item-visible {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+      display: flex;
+    }
+
+    /* Dark Mode Theme Tokens */
+    .dark body {
+      background-color: #121312;
+      color: #edece8;
+    }
+    .dark .bg-surface {
+      background-color: #121312;
+    }
+    .dark .bg-surface-bright {
+      background-color: #1b1c1b;
+    }
+    .dark .bg-surface-container {
+      background-color: #1f211f;
+    }
+    .dark .bg-surface-container-high {
+      background-color: #272a27;
+    }
+    .dark .bg-surface-container-low {
+      background-color: #181a18;
+    }
+    .dark .bg-surface-container-lowest {
+      background-color: #141514;
+    }
+    .dark .text-primary {
+      color: #f7ede2;
+    }
+    .dark .text-on-surface {
+      color: #edece8;
+    }
+    .dark .text-on-surface-variant {
+      color: #c4b5a5;
+    }
+    .dark .border-surface-container {
+      border-color: #2c2f2c;
+    }
+    .dark .border-outline-variant\/20,
+    .dark .border-outline-variant\/30 {
+      border-color: rgba(255, 255, 255, 0.1);
     }
   </style>
 </head>
 
-<body class="bg-surface text-body-md text-on-surface antialiased flex flex-col min-h-screen relative selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+<body class="bg-surface font-body-md text-body-md text-on-surface antialiased flex flex-col min-h-screen selection:bg-secondary-fixed selection:text-primary">
 
   <!-- ====================================================================
-       TOP NAVIGATION BAR
+       STICKY HEADER
        ==================================================================== -->
-  <header class="fixed top-0 w-full z-40 pt-safe bg-surface/85 backdrop-blur-xl border-b border-surface-container-high/80 shadow-[0_1px_8px_rgba(0,0,0,0.03)]">
-    <div class="max-w-4xl mx-auto h-16 px-margin flex items-center justify-between">
-      <!-- Brand & Status -->
-      <a href="#hero" class="flex flex-col gap-0.5 group" aria-label="Studio Kai Home">
+  <header class="fixed top-0 w-full z-40 pt-safe bg-surface/85 backdrop-blur-xl border-b border-surface-container transition-all duration-300">
+    <div class="h-16 px-margin flex items-center justify-between max-w-lg mx-auto w-full">
+      <a href="#hero-section" class="flex flex-col gap-0.5 group">
         <div class="flex items-center gap-space-xs">
-          <span class="font-headline-md text-headline-md tracking-tight text-primary font-semibold group-hover:text-primary-container transition-colors">STUDIO KAI</span>
+          <span class="font-headline-md text-headline-md tracking-tight text-primary font-semibold group-hover:text-primary-container transition-colors">STUDIO BHAVISHYA</span>
           <span class="font-label-sm text-label-sm uppercase text-outline-variant px-1">/</span>
           <span class="font-label-sm text-label-sm uppercase text-outline tracking-wider hidden sm:inline">Works</span>
         </div>
@@ -187,188 +262,123 @@
         </div>
       </a>
 
-      <!-- Actions -->
       <div class="flex items-center gap-space-sm">
-        <a href="#contact" class="hidden sm:inline-flex items-center gap-1.5 h-9 px-3.5 rounded-full bg-primary-container text-surface-bright text-label-sm font-label-sm uppercase tracking-wider hover:opacity-90 transition-opacity">
-          <span>Inquire</span>
-          <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
-        </a>
-        <button id="header-menu-btn" aria-label="Toggle Menu Drawer" class="w-10 h-10 flex items-center justify-center rounded-full text-primary hover:bg-surface-container transition-colors">
-          <span class="material-symbols-outlined text-[20px]">menu_open</span>
+        <!-- Light / Dark Mode Toggle Button -->
+        <button id="theme-toggle-btn" aria-label="Toggle Light and Dark Mode" title="Toggle Color Theme" class="w-10 h-10 flex items-center justify-center rounded-full text-primary hover:bg-surface-container active:scale-90 transition-all border border-outline-variant/30">
+          <span id="theme-toggle-icon" class="material-symbols-outlined text-[20px]">dark_mode</span>
         </button>
-        <a href="#about" aria-label="Kai Thorne Profile" class="w-8 h-8 rounded-full overflow-hidden shrink-0 border border-outline-variant/60 shadow-sm block">
-          <img alt="Kai Thorne Profile" class="w-full h-full object-cover" src="assets/kai/profile.jpg" onerror="this.src='https://lh3.googleusercontent.com/aida-public/AB6AXuC5z_9VYr48SKLcPMwm-uSoMXMFWld9Jni3XkBXerkGVbviVE-OI2ilhqt22k8I2qg-XqMNBQhSL8hr2tiXtam6PDhAUUnim3r_gdNmJbm06KbZ_IuegjCbS0Gt85JLRuh4hAy-i8kTbRKUUJtkpFWjDmEkAJRmWKw58pLgA9_p6y6eP85Md9NMXNwjZaNdcyY42t-5mD2_c1zUbP0kdrUenSST36HxCKotprJ_frB-6b6ergeMMyk'"/>
+
+        <!-- Direct Message Action -->
+        <a href="#contact-section" aria-label="Direct Message" class="w-10 h-10 flex items-center justify-center rounded-full text-primary hover:bg-surface-container active:scale-95 transition-all">
+          <span class="material-symbols-outlined text-[20px]">mark_email_read</span>
+        </a>
+
+        <!-- Profile Avatar with fallback -->
+        <a href="#about-section" class="w-8 h-8 rounded-full overflow-hidden shrink-0 ring-2 ring-surface-container-high transition-transform duration-300 hover:scale-105 block">
+          <img alt="Bhavishya Pareek Profile" class="w-full h-full object-cover" src="assets/bhavishya/profile.jpg" onerror="this.src='https://lh3.googleusercontent.com/aida/AEtjO1WD9nzEy1GL0egBi5gXpOwpzIzAyjdXmwwZlO7p9yTgsyMw6rAThSg97ET9FBM-y3UpzOPz0SFrHAxOC35AcXYV04JWPuFA88YoM1KrrT8Ju1HJIUV40CQQJhz2VgNqABkKzeK0EVsNKcUgwzdBhPXbnNyEtvUBlZeaTh0wZ4oXMG-wXGjv6xJgB0orRAwqK5LSNRdw58TqNPswECu8K8iOcr0VbeJd85XPMYc9clU'"/>
         </a>
       </div>
     </div>
   </header>
 
-  <!-- Slide-out Navigation Drawer -->
-  <div id="nav-drawer" class="fixed inset-0 z-50 bg-primary/40 backdrop-blur-sm hidden transition-opacity duration-300">
-    <div class="absolute top-0 right-0 w-full max-w-xs h-full bg-surface-bright shadow-2xl p-6 flex flex-col justify-between transform translate-x-full transition-transform duration-300" id="drawer-panel">
-      <div class="flex flex-col gap-6">
-        <div class="flex items-center justify-between pb-4 border-b border-surface-container-high">
-          <div class="flex flex-col">
-            <span class="font-headline-md text-headline-md font-semibold text-primary">STUDIO KAI</span>
-            <span class="text-label-sm font-label-sm uppercase tracking-wider text-outline">Zurich &bull; Tokyo</span>
-          </div>
-          <button id="close-drawer-btn" class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-primary hover:bg-surface-container-high" aria-label="Close menu">
-            <span class="material-symbols-outlined text-[20px]">close</span>
-          </button>
-        </div>
-
-        <nav class="flex flex-col gap-3 font-headline-md text-headline-md text-primary">
-          <a href="#hero" class="drawer-link py-2 hover:text-primary-container transition-colors flex items-center justify-between">
-            <span>Home</span>
-            <span class="material-symbols-outlined text-[18px] text-outline">arrow_forward</span>
-          </a>
-          <a href="#3d-lab" class="drawer-link py-2 hover:text-primary-container transition-colors flex items-center justify-between">
-            <span>3D Specs Lab</span>
-            <span class="material-symbols-outlined text-[18px] text-outline">view_in_ar</span>
-          </a>
-          <a href="#works" class="drawer-link py-2 hover:text-primary-container transition-colors flex items-center justify-between">
-            <span>Selected Works</span>
-            <span class="material-symbols-outlined text-[18px] text-outline">architecture</span>
-          </a>
-          <a href="#about" class="drawer-link py-2 hover:text-primary-container transition-colors flex items-center justify-between">
-            <span>Philosophy &bull; Bio</span>
-            <span class="material-symbols-outlined text-[18px] text-outline">person_outline</span>
-          </a>
-          <a href="#contact" class="drawer-link py-2 hover:text-primary-container transition-colors flex items-center justify-between">
-            <span>Commission Inquiries</span>
-            <span class="material-symbols-outlined text-[18px] text-outline">mail</span>
-          </a>
-        </nav>
-      </div>
-
-      <div class="pt-6 border-t border-surface-container-high flex flex-col gap-3">
-        <div class="text-body-sm font-body-sm text-on-surface-variant">
-          Studio Kai &mdash; Spatial &amp; Industrial Design.
-        </div>
-        <div class="text-label-sm font-label-sm uppercase tracking-wider text-outline">
-          &copy; 2025&ndash;2026 Kai Thorne.
-        </div>
-      </div>
-    </div>
-  </div>
-
   <!-- ====================================================================
-       MAIN PAGE CONTENT
+       MAIN VIEWPORT
        ==================================================================== -->
-  <main class="flex-1 flex flex-col relative w-full pt-20 pb-28 bg-surface">
-    <div class="w-full max-w-4xl mx-auto flex flex-col">
+  <main class="flex-1 flex flex-col relative w-full pt-16 pb-28 bg-surface max-w-lg mx-auto">
+    <div class="flex flex-col w-full pb-12">
 
       <!-- ================================================================
            HERO SECTION
            ================================================================ -->
-      <section id="hero" class="px-margin pt-6 pb-space-lg flex flex-col gap-space-md">
-        <div class="inline-flex items-center gap-2 self-start px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed text-label-sm font-label-sm uppercase tracking-wider">
+      <section id="hero-section" class="px-margin pt-6 pb-space-lg flex flex-col gap-space-md">
+        <div class="inline-flex items-center gap-2 self-start px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed text-label-sm font-label-sm uppercase tracking-wider transition-transform duration-300 hover:scale-[1.02]">
           <span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>
           <span>Available for commissions &mdash; Autumn / Winter 2025</span>
         </div>
 
         <div class="flex flex-col gap-1.5">
-          <p class="text-label-md font-label-md uppercase tracking-widest text-outline">Portfolio &amp; Lab</p>
-          <h1 class="text-headline-xl-mobile sm:text-headline-xl font-headline-xl text-primary tracking-tight font-semibold">
-            Kai Thorne
+          <p class="text-label-md font-label-md uppercase tracking-widest text-outline">Portfolio &amp; Engineering Lab</p>
+          <h1 class="text-headline-xl-mobile font-headline-xl-mobile text-primary tracking-tight font-semibold">
+            Bhavishya Pareek
           </h1>
-          <p class="text-headline-md font-headline-md text-on-surface-variant font-normal">
-            Spatial &amp; Industrial Designer
+          <p class="text-headline-md font-headline-md text-on-surface-variant font-normal leading-snug">
+            UI/UX Designer, Web Designer, Data Scientist &amp; AI/ML Engineer
           </p>
         </div>
 
-        <p class="text-body-lg font-body-lg text-on-surface-variant max-w-xl">
-          Designing sensory spaces, objects, and tactile structures grounded in earthy materiality and timeless simplicity.
+        <p class="text-body-lg font-body-lg text-on-surface-variant">
+          Designing sensory spaces, objects, and tactile structures grounded in earthy materiality and timeless simplicity, synthesized with cutting-edge intelligent systems.
         </p>
-
-        <!-- Quick actions -->
-        <div class="flex items-center gap-3 pt-2">
-          <a href="#works" class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-container text-surface-bright text-label-md font-label-md uppercase tracking-wider hover:opacity-90 active:scale-95 transition-all shadow-sm">
-            <span class="material-symbols-outlined text-[16px]">architecture</span>
-            <span>Explore Works</span>
-          </a>
-          <a href="#3d-lab" class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-surface-container text-primary text-label-md font-label-md uppercase tracking-wider hover:bg-surface-container-high active:scale-95 transition-all">
-            <span class="material-symbols-outlined text-[16px]">view_in_ar</span>
-            <span>Interactive 3D Lab</span>
-          </a>
-        </div>
       </section>
 
       <!-- ================================================================
            3D SPECS / INTERACTIVE OBJECT LAB SECTION
            ================================================================ -->
-      <section id="3d-lab" class="px-margin mb-space-xl">
-        <div class="bg-surface-container rounded-xl p-space-md sm:p-space-lg flex flex-col gap-space-md shadow-sm border border-surface-container-high/60">
-          
-          <!-- Lab Header -->
+      <section class="scroll-mt-20 px-margin mb-space-xl transition-all duration-500 rounded-xl" id="lab-section">
+        <div class="bg-surface-container rounded-xl p-space-md flex flex-col gap-space-md shadow-sm border border-outline-variant/30">
           <div class="flex items-center justify-between">
             <div class="flex items-center gap-2">
-              <span class="material-symbols-outlined text-primary text-[22px]">view_in_ar</span>
+              <span class="material-symbols-outlined text-primary text-[20px]">view_in_ar</span>
               <span class="font-label-md text-label-md uppercase tracking-wider text-primary font-semibold">3D Specs / Object Lab</span>
             </div>
             <span class="inline-flex items-center gap-1.5 text-label-sm font-label-sm px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface-variant">
-              <span class="material-symbols-outlined text-[14px]">touch_app</span>
-              <span>Interactive 3D Specimen</span>
+              <span class="w-1.5 h-1.5 rounded-full bg-secondary animate-ping"></span>
+              <span>Interactive Viewport</span>
             </span>
           </div>
 
-          <!-- 3D Scene Viewport -->
-          <div class="relative w-full rounded-lg overflow-hidden bg-surface-container-low flex items-center justify-center min-h-[300px] sm:min-h-[360px] border border-surface-container-high shadow-inner">
-            <!-- Three.js Container -->
-            <div id="threejs-container-ANIMATION_1" class="w-full h-80 sm:h-96 rounded-lg cursor-grab active:cursor-grabbing relative" style="display:block;"></div>
+          <!-- 3D Scene Viewport Canvas -->
+          <div class="relative w-full rounded-lg overflow-hidden bg-surface-container-low flex items-center justify-center min-h-[300px] border border-outline-variant/20 shadow-inner group">
+            <canvas class="w-full h-[300px] cursor-grab active:cursor-grabbing block" id="three-specs-canvas"></canvas>
 
-            <!-- Viewport HUD / Instructions -->
-            <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between pointer-events-none">
-              <span class="bg-surface-container-lowest/85 backdrop-blur-md px-3 py-1.5 rounded-full text-label-sm font-label-sm text-on-surface tracking-wide shadow-sm flex items-center gap-1.5">
-                <span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
-                <span>Touch or drag to rotate 3D geometry</span>
+            <!-- Interactive Touch Drag Overlay Hint -->
+            <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between pointer-events-none transition-opacity duration-300">
+              <span class="bg-surface-container-lowest/85 backdrop-blur-md px-3 py-1 rounded-full text-label-sm font-label-sm text-on-surface tracking-wide shadow-sm flex items-center gap-1.5 border border-outline-variant/30">
+                <span class="material-symbols-outlined text-[14px] text-primary">touch_app</span>
+                <span>Drag to rotate &bull; Pinch / Scroll to zoom</span>
               </span>
-
-              <!-- Reset View Button -->
-              <button id="reset-view-btn" type="button" class="pointer-events-auto w-9 h-9 rounded-full bg-surface-container-lowest/90 backdrop-blur-md flex items-center justify-center text-primary shadow-sm active:scale-90 hover:bg-surface-container-lowest transition-all" title="Reset 3D View" aria-label="Reset 3D View">
-                <span class="material-symbols-outlined text-[18px]">restart_alt</span>
+              <button class="pointer-events-auto w-8 h-8 rounded-full bg-surface-container-lowest/90 backdrop-blur-md flex items-center justify-center text-primary shadow-sm active:scale-90 hover:bg-surface-bright transition-all border border-outline-variant/30" id="reset-view-btn" title="Reset View" aria-label="Reset View">
+                <span class="material-symbols-outlined text-[16px]">restart_alt</span>
               </button>
             </div>
           </div>
 
-          <!-- Specimen Description -->
-          <div class="flex flex-col gap-1.5">
+          <div class="flex flex-col gap-1">
             <div class="flex items-baseline justify-between">
               <h2 class="text-headline-md font-headline-md text-primary font-semibold">
                 Specimen 01: Ocular Silhouette (3D Specs)
               </h2>
               <span class="text-label-sm font-label-sm uppercase tracking-wider text-outline font-mono">ED. 2025</span>
             </div>
-            <p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
-              Sculptural eyewear developed through subtractive milling and organic ergonomics, reflecting raw architectural forms and warm tactile materiality.
+            <p class="text-body-sm font-body-sm text-on-surface-variant">
+              Intelligent spatial compute eyewear developed through subtractive milling, generative algorithms, and organic ergonomics.
             </p>
           </div>
 
-          <!-- Specifications Accordion -->
-          <div class="flex flex-col gap-2">
-            <button aria-expanded="false" class="flex items-center justify-between py-2.5 px-3.5 rounded-lg bg-surface-container-high text-on-surface hover:bg-surface-container-highest transition-colors" id="toggle-specs">
+          <!-- Specifications Smooth Collapsible Accordion -->
+          <div class="flex flex-col">
+            <button aria-expanded="false" class="w-full flex items-center justify-between py-2.5 px-3 rounded-lg bg-surface-container-high hover:bg-surface-variant text-on-surface transition-all duration-300 focus:outline-none" id="toggle-specs">
               <span class="text-label-md font-label-md uppercase tracking-wider font-medium flex items-center gap-2">
-                <span class="material-symbols-outlined text-[18px]">tune</span>
+                <span class="material-symbols-outlined text-[18px] text-primary">tune</span>
                 <span>Specifications &amp; Materiality</span>
               </span>
-              <span class="material-symbols-outlined text-[18px] transition-transform duration-200" id="specs-chevron">expand_more</span>
+              <span class="material-symbols-outlined text-[20px] transition-transform duration-300 text-outline" id="specs-chevron">expand_more</span>
             </button>
-
-            <div class="hidden flex flex-col gap-2 px-1 pt-1 pb-2" id="specs-content">
-              <div class="flex items-center justify-between text-body-sm font-body-sm py-1.5 border-b border-surface-container-high">
+            <div class="accordion-content px-2" id="specs-content">
+              <div class="flex items-center justify-between text-body-sm font-body-sm py-1.5 border-b border-outline-variant/20">
                 <span class="text-outline">Material</span>
                 <span class="text-on-surface font-medium text-right">Hand-turned Italian Acetate &amp; Brushed Brass</span>
               </div>
-              <div class="flex items-center justify-between text-body-sm font-body-sm py-1.5 border-b border-surface-container-high">
+              <div class="flex items-center justify-between text-body-sm font-body-sm py-1.5 border-b border-outline-variant/20">
                 <span class="text-outline">Finish</span>
                 <span class="inline-flex items-center gap-1.5 text-on-surface font-medium">
-                  <span class="w-3 h-3 rounded-full bg-primary-container inline-block"></span>
+                  <span class="w-3 h-3 rounded-full bg-primary-container inline-block shadow-sm"></span>
                   Earthy Terracotta (#582f0e)
                 </span>
               </div>
-              <div class="flex items-center justify-between text-body-sm font-body-sm py-1.5 border-b border-surface-container-high">
+              <div class="flex items-center justify-between text-body-sm font-body-sm py-1.5 border-b border-outline-variant/20">
                 <span class="text-outline">Dimensions</span>
-                <span class="text-on-surface font-medium">48-21-145 mm</span>
+                <span class="text-on-surface font-medium font-mono">48-21-145 mm</span>
               </div>
               <div class="flex items-center justify-between text-body-sm font-body-sm py-1.5">
                 <span class="text-outline">Weight</span>
@@ -377,7 +387,7 @@
             </div>
           </div>
 
-          <!-- View 3D Technical Specs Modal Trigger Button -->
+          <!-- Modal Trigger Button -->
           <button class="w-full h-12 rounded-full bg-primary-container text-surface-bright font-label-lg text-label-lg tracking-wide uppercase flex items-center justify-center gap-2 active:scale-[0.98] hover:opacity-95 transition-all shadow-sm" id="modal-trigger" type="button">
             <span class="material-symbols-outlined text-[18px]">architecture</span>
             <span>View 3D Technical Specs</span>
@@ -385,161 +395,132 @@
         </div>
       </section>
 
-      <!-- Technical Specs Detail Modal -->
-      <div class="fixed inset-0 z-50 bg-primary/40 backdrop-blur-sm hidden flex items-end sm:items-center justify-center p-0 sm:p-4" id="tech-modal" role="dialog" aria-modal="true" aria-labelledby="modal-spec-title">
-        <div class="w-full max-w-md bg-surface-bright rounded-t-2xl sm:rounded-2xl p-space-lg flex flex-col gap-space-md max-h-[85vh] overflow-y-auto shadow-2xl border border-surface-container-high animate-fadeIn">
-          <div class="w-10 h-1 rounded-full bg-outline-variant self-center mb-1 sm:hidden"></div>
-          
-          <div class="flex items-center justify-between">
-            <div class="flex flex-col">
-              <span class="text-label-sm font-label-sm uppercase tracking-wider text-outline">Lab Sheet / 01</span>
-              <h3 id="modal-spec-title" class="text-headline-md font-headline-md text-primary font-semibold">Ocular Silhouette (3D Specs)</h3>
-            </div>
-            <button class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-primary hover:bg-surface-container-high transition-colors" id="close-modal" aria-label="Close specifications modal">
-              <span class="material-symbols-outlined text-[20px]">close</span>
-            </button>
-          </div>
-
-          <div class="grid grid-cols-2 gap-2.5 text-body-sm font-body-sm">
-            <div class="p-3 bg-surface-container rounded-lg flex flex-col gap-1">
-              <span class="text-label-sm font-label-sm uppercase text-outline">Curvature</span>
-              <span class="text-primary font-medium">Base Curve 4</span>
-            </div>
-            <div class="p-3 bg-surface-container rounded-lg flex flex-col gap-1">
-              <span class="text-label-sm font-label-sm uppercase text-outline">Hinge System</span>
-              <span class="text-primary font-medium">Custom 5-Barrel</span>
-            </div>
-            <div class="p-3 bg-surface-container rounded-lg flex flex-col gap-1">
-              <span class="text-label-sm font-label-sm uppercase text-outline">Tolerance</span>
-              <span class="text-primary font-medium">&plusmn;0.05 mm</span>
-            </div>
-            <div class="p-3 bg-surface-container rounded-lg flex flex-col gap-1">
-              <span class="text-label-sm font-label-sm uppercase text-outline">Origin</span>
-              <span class="text-primary font-medium">Cadore, Italy</span>
-            </div>
-          </div>
-
-          <p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
-            Engineered for structural balance, pairing warmth of cured organic cellulose acetate with cold, brushed artisan brass hardware and refractive optical clarity.
-          </p>
-
-          <button class="h-11 rounded-full bg-surface-container-high text-primary font-label-md text-label-md uppercase tracking-wider hover:bg-surface-container-highest transition-colors" id="dismiss-modal-btn" type="button">
-            Dismiss
-          </button>
-        </div>
-      </div>
-
       <!-- ================================================================
-           SELECTED ARCHITECTURE & OBJECTS SECTION
+           SELECTED WORKS SECTION
            ================================================================ -->
-      <section id="works" class="px-margin mb-space-xl flex flex-col gap-space-md">
+      <section class="scroll-mt-20 px-margin mb-space-xl flex flex-col gap-space-md transition-all duration-500 rounded-xl" id="works-section">
         <div class="flex flex-col gap-1">
           <div class="flex items-baseline justify-between">
             <h2 class="text-headline-lg font-headline-lg text-primary font-semibold">Selected Works</h2>
             <span class="text-label-sm font-label-sm uppercase tracking-wider text-outline font-mono">2023 &mdash; 2025</span>
           </div>
           <p class="text-body-sm font-body-sm text-on-surface-variant">
-            A curated cross-section of spatial pavilions, tactile everyday objects, and restorative renovations.
+            A curated cross-section of spatial UI interfaces, generative AI pipelines, and predictive data systems.
           </p>
         </div>
 
         <!-- Filter Tabs -->
-        <div class="flex items-center gap-2 overflow-x-auto pb-1 no-scrollbar" id="filter-bar" role="tablist">
-          <button class="filter-chip px-4 py-2 rounded-full text-label-md font-label-md uppercase tracking-wider bg-primary-container text-surface-bright transition-all shrink-0 active:scale-95" data-filter="all" role="tab" aria-selected="true">
+        <div class="flex items-center gap-2 overflow-x-auto pb-1 no-scrollbar" id="filter-bar">
+          <button class="filter-chip active-filter px-4 py-2 rounded-full text-label-md font-label-md uppercase tracking-wider bg-primary-container text-surface-bright transition-all duration-300 whitespace-nowrap shadow-sm" data-filter="all">
             All
           </button>
-          <button class="filter-chip px-4 py-2 rounded-full text-label-md font-label-md uppercase tracking-wider bg-surface-container text-secondary transition-all shrink-0 active:scale-95" data-filter="spatial" role="tab" aria-selected="false">
-            Architecture
+          <button class="filter-chip px-4 py-2 rounded-full text-label-md font-label-md uppercase tracking-wider bg-surface-container text-secondary hover:bg-surface-container-high transition-all duration-300 whitespace-nowrap" data-filter="ui-web">
+            UI/UX &amp; Web
           </button>
-          <button class="filter-chip px-4 py-2 rounded-full text-label-md font-label-md uppercase tracking-wider bg-surface-container text-secondary transition-all shrink-0 active:scale-95" data-filter="objects" role="tab" aria-selected="false">
-            Objects
+          <button class="filter-chip px-4 py-2 rounded-full text-label-md font-label-md uppercase tracking-wider bg-surface-container text-secondary hover:bg-surface-container-high transition-all duration-300 whitespace-nowrap" data-filter="ai-ml">
+            AI &amp; ML Systems
           </button>
-          <button class="filter-chip px-4 py-2 rounded-full text-label-md font-label-md uppercase tracking-wider bg-surface-container text-secondary transition-all shrink-0 active:scale-95" data-filter="interiors" role="tab" aria-selected="false">
-            Interiors
+          <button class="filter-chip px-4 py-2 rounded-full text-label-md font-label-md uppercase tracking-wider bg-surface-container text-secondary hover:bg-surface-container-high transition-all duration-300 whitespace-nowrap" data-filter="data-science">
+            Data Science
           </button>
         </div>
 
         <!-- Project Cards Grid -->
         <div class="flex flex-col gap-space-md" id="projects-container">
-          <!-- Project 1: Komorebi Pavilion -->
-          <article class="project-item bg-surface-container rounded-xl p-space-sm sm:p-space-md flex flex-col gap-3 transition-all duration-300 border border-surface-container-high/60 hover:shadow-md" data-category="spatial">
-            <div class="relative w-full h-56 sm:h-72 rounded-lg overflow-hidden bg-surface-container-high group">
-              <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Serene Komorebi Pavilion in Kyoto interior" src="assets/kai/komorebi.jpg" onerror="this.src='https://lh3.googleusercontent.com/aida-public/AB6AXuAZRSTyltfVxoqiJsYaRrhjgaipRvs2Ir6QB_16gZ0wTZe-YUrjA8ZumcZMMqDx6OBP_koPbBpJ1HqKH2JO6WtUd1L2eeX2KxU16MInaVZzU9ZFy_pcBwVyXlZA9acEuXTtAV840zGmNtBfNCU3VbmD5WI9rcYER02iHImHRl9AVuKoYm8Luy_IGawxrEmfwgRv-Zz7qjOcPlUV9aG69Vi3Id0zVYnY45yUWkgCF9PQxfGahOiqcsE'" loading="lazy"/>
-              <span class="absolute top-3 left-3 bg-surface-bright/90 backdrop-blur-md px-2.5 py-1 rounded-full text-label-sm font-label-sm uppercase tracking-wider text-primary shadow-sm">
-                Kyoto, Japan
+          <!-- Project 1 (AI & ML Systems) -->
+          <article class="project-card item-visible bg-surface-container rounded-xl p-space-sm flex flex-col gap-3 border border-outline-variant/20 hover:border-outline-variant/60 shadow-sm cursor-pointer" data-category="ai-ml" data-desc="Interactive web environment bridging diffusion-based neural geometry synthesis with real-time spatial interaction and low-latency inference." data-tag="PyTorch &bull; Three.js &bull; Spatial UI" data-title="NeuroSpatial Studio &mdash; Generative 3D &amp; Vision Model UI">
+            <div class="relative w-full h-56 rounded-lg overflow-hidden bg-surface-container-high">
+              <img alt="NeuroSpatial Studio - Generative 3D and Vision Model neural UI dashboard" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" src="assets/bhavishya/neurospatial.jpg" onerror="this.src='https://lh3.googleusercontent.com/aida-public/AB6AXuDgV3Z76uNCWMfT4WSynyqJhL_8--Oz1SvRUDmmpj9gcH9yzXs7f3-Xsb-fRCFG5SW-TFdz8r0lCqgsd9DKurkI9C1rXLuLGQH1hG9iw5eLZV1086kW42evVm-wfRwVdMiPNoWW9nYsPELhi-7p0rqyS0nmFnVNSI23CKQe_FWQegjsP4F4OYBQ2FBt4seoNOP5BBX8Ofemr_HuVaRICI-GGArUdroqQ0xyaae0eA'"/>
+              <span class="absolute top-3 left-3 bg-surface-bright/90 backdrop-blur-md px-2.5 py-1 rounded-full text-label-sm font-label-sm uppercase tracking-wider text-primary border border-outline-variant/30">
+                AI &amp; ML Systems
               </span>
+              <button class="project-detail-btn absolute bottom-3 right-3 bg-surface-bright/90 backdrop-blur-md p-2 rounded-full text-primary shadow-sm hover:scale-110 active:scale-95 transition-transform" title="View details" aria-label="View Project Details">
+                <span class="material-symbols-outlined text-[18px]">arrow_outward</span>
+              </button>
             </div>
             <div class="px-2 pb-2 flex flex-col gap-2">
               <div class="flex items-baseline justify-between">
-                <h3 class="text-headline-md font-headline-md text-primary font-semibold">Komorebi Pavilion</h3>
+                <h3 class="text-headline-md font-headline-md text-primary font-semibold">NeuroSpatial Studio &mdash; Generative 3D &amp; Vision Model UI</h3>
                 <span class="text-body-sm font-body-sm text-outline font-mono">2024</span>
               </div>
-              <p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
-                A meditative tea pavilion balancing rough board-formed concrete with fragrant hinoki cedar and sun-filtered linen shoji screens.
+              <p class="text-body-sm font-body-sm text-on-surface-variant">
+                Interactive web environment bridging diffusion-based neural geometry synthesis with real-time spatial interaction and low-latency inference.
               </p>
               <div class="flex flex-wrap gap-1.5 pt-1">
                 <span class="px-2.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed text-label-sm font-label-sm uppercase tracking-wider">
-                  Olive Plaster
+                  PyTorch
                 </span>
                 <span class="px-2.5 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed-variant text-label-sm font-label-sm uppercase tracking-wider">
-                  Warm Timber
+                  Three.js
                 </span>
                 <span class="px-2.5 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant text-label-sm font-label-sm uppercase tracking-wider">
-                  Spatial Design
+                  Interface Design
                 </span>
               </div>
             </div>
           </article>
 
-          <!-- Project 2: Ceramic Vessel Series -->
-          <article class="project-item bg-surface-container rounded-xl p-space-sm sm:p-space-md flex flex-col gap-3 transition-all duration-300 border border-surface-container-high/60 hover:shadow-md" data-category="objects">
-            <div class="relative w-full h-56 sm:h-72 rounded-lg overflow-hidden bg-surface-container-high group">
-              <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Handcrafted ceramic sculptural vessel trio" src="assets/kai/vessels.jpg" onerror="this.src='https://lh3.googleusercontent.com/aida-public/AB6AXuC4BlbZBl69bk46qjfSTE748AlEkPpAbRDe5hzpPP60O-YFErpde29k4V0VOngoCEOx1_JzCPumKRsdN_z6X6-VI5kDjxE4rExqbxqZaERU_smhzxGIqSriA1Sf725Evl2XeJ7I1y9wMUvLMiIMZDCwpJzUaad3FWllx_xv9l7iaalEU8DVu9ylmdaPyOqJ6YCMJ_FwKQcvzyXEpP7YMj1oRt3rETkDNhZ0XwWA5fNWZrZgNaZtcBY'" loading="lazy"/>
-              <span class="absolute top-3 left-3 bg-surface-bright/90 backdrop-blur-md px-2.5 py-1 rounded-full text-label-sm font-label-sm uppercase tracking-wider text-primary shadow-sm">
-                Edition of 12
+          <!-- Project 2 (UI/UX & Web Design) -->
+          <article class="project-card item-visible bg-surface-container rounded-xl p-space-sm flex flex-col gap-3 border border-outline-variant/20 hover:border-outline-variant/60 shadow-sm cursor-pointer" data-category="ui-web" data-desc="Full-stack design system and responsive web application engineered for sensory aesthetic harmony, multi-theme accessibility, and modular component architecture." data-tag="UI/UX &bull; Design Tokens &bull; Full-Stack" data-title="Aura Minimalist Design System &amp; Web Platform">
+            <div class="relative w-full h-56 rounded-lg overflow-hidden bg-surface-container-high">
+              <img alt="Aura Minimalist Design System &amp; Web Platform showcase interface" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" src="assets/bhavishya/aura.jpg" onerror="this.src='https://lh3.googleusercontent.com/aida-public/AB6AXuALhmr4bu31soY0PwV8Kl8ndP3_wca9qzaWeEeochsbu3RZTuJJIPPBUsnrs7A2PJJIdXn_Z6FCn_dQ0x-l9qEqzl9jvNhBkz-4_OMaMg-BLuEca9QsZVmDtGcXI1amGal9JU5SGon4taYth1cUmMSTsKWQBpsF6wNq-XYsEP6euTqqghx2K9paaj9W803A1uSdTkx3fWr0IVUrok7CQNIF97nNidCMh4Me0k1xZA'"/>
+              <span class="absolute top-3 left-3 bg-surface-bright/90 backdrop-blur-md px-2.5 py-1 rounded-full text-label-sm font-label-sm uppercase tracking-wider text-primary border border-outline-variant/30">
+                UI/UX &amp; Web
               </span>
+              <button class="project-detail-btn absolute bottom-3 right-3 bg-surface-bright/90 backdrop-blur-md p-2 rounded-full text-primary shadow-sm hover:scale-110 active:scale-95 transition-transform" title="View details" aria-label="View Project Details">
+                <span class="material-symbols-outlined text-[18px]">arrow_outward</span>
+              </button>
             </div>
             <div class="px-2 pb-2 flex flex-col gap-2">
               <div class="flex items-baseline justify-between">
-                <h3 class="text-headline-md font-headline-md text-primary font-semibold">Earthy Ceramic Vessel Series</h3>
+                <h3 class="text-headline-md font-headline-md text-primary font-semibold">Aura Minimalist Design System &amp; Web Platform</h3>
                 <span class="text-body-sm font-body-sm text-outline font-mono">2024</span>
               </div>
-              <p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
-                Hand-thrown stoneware glazed in warm umber and sand tones, exploring the tension between symmetrical wheel-thrown geometry and raw physical pinch marks.
+              <p class="text-body-sm font-body-sm text-on-surface-variant">
+                Full-stack design system and responsive web application engineered for sensory aesthetic harmony, multi-theme accessibility, and modular component architecture.
               </p>
               <div class="flex flex-wrap gap-1.5 pt-1">
+                <span class="px-2.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed text-label-sm font-label-sm uppercase tracking-wider">
+                  UI/UX Design
+                </span>
                 <span class="px-2.5 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed-variant text-label-sm font-label-sm uppercase tracking-wider">
-                  Umber Stoneware
+                  Design System
                 </span>
                 <span class="px-2.5 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant text-label-sm font-label-sm uppercase tracking-wider">
-                  Object Study
+                  Full-Stack Web
                 </span>
               </div>
             </div>
           </article>
 
-          <!-- Project 3: Atelier Solis -->
-          <article class="project-item bg-surface-container rounded-xl p-space-sm sm:p-space-md flex flex-col gap-3 transition-all duration-300 border border-surface-container-high/60 hover:shadow-md" data-category="interiors">
-            <div class="relative w-full h-56 sm:h-72 rounded-lg overflow-hidden bg-surface-container-high group">
-              <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Modernist interior design of Atelier Solis in Lisbon" src="assets/kai/solis.jpg" onerror="this.src='https://lh3.googleusercontent.com/aida-public/AB6AXuA8hoepNiMt2sUdnhvFQ2Nex2wUBggaRtHFbDFJzQ4cPBJk9k4S4qZb-Ax0gT6XUZqzpXCmzNB5bqzOBJeIHMI3adIID4CZYiMgXSkFjiyKY8SgEtATqBObfgI1ddbbuy-A8bGXMNuYBGLg6rZJ8O_IosIZSMzVPnUk7H8qP6dfOPSWX3bT6-NHW_9Rx38pEmu8vh4q9re7G2JugwIl-1HpMBWfPudh2KaHnHZFex10Vpxrvj1rx70'" loading="lazy"/>
-              <span class="absolute top-3 left-3 bg-surface-bright/90 backdrop-blur-md px-2.5 py-1 rounded-full text-label-sm font-label-sm uppercase tracking-wider text-primary shadow-sm">
-                Lisbon, Portugal
+          <!-- Project 3 (Data Science) -->
+          <article class="project-card item-visible bg-surface-container rounded-xl p-space-sm flex flex-col gap-3 border border-outline-variant/20 hover:border-outline-variant/60 shadow-sm cursor-pointer" data-category="data-science" data-desc="Predictive machine learning models mapped into intuitive visual narratives, turning high-dimensional telemetry into actionable executive decisions." data-tag="Data Science &bull; Predictive AI &bull; D3.js" data-title="Synapse Analytics &mdash; Predictive Data Intelligence Dashboard">
+            <div class="relative w-full h-56 rounded-lg overflow-hidden bg-surface-container-high">
+              <img alt="Synapse Analytics - Predictive Data Intelligence Dashboard interface" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" src="assets/bhavishya/synapse.jpg" onerror="this.src='https://lh3.googleusercontent.com/aida-public/AB6AXuCaofHv0forhqretrMaQ7KUwBjKMNEEXf_82ifG1M49SwNPxLXC2v3is7EH2QC1jPP6e37xB64W9C-C6wFv52U1NhEgmZhHQ5HHKQsqFsnejAZCQpUXiFwASqZJXVHzmR2nntsJJsFZMPHezdEifQg5zYdgaQdmSmJqGFUgzz-f15-_MDkbiJP-IaPYnA6TDUW2o4QYwThJjCxlsOqnzzow1DxINPFN4C37UfgOlQ'"/>
+              <span class="absolute top-3 left-3 bg-surface-bright/90 backdrop-blur-md px-2.5 py-1 rounded-full text-label-sm font-label-sm uppercase tracking-wider text-primary border border-outline-variant/30">
+                Data Science
               </span>
+              <button class="project-detail-btn absolute bottom-3 right-3 bg-surface-bright/90 backdrop-blur-md p-2 rounded-full text-primary shadow-sm hover:scale-110 active:scale-95 transition-transform" title="View details" aria-label="View Project Details">
+                <span class="material-symbols-outlined text-[18px]">arrow_outward</span>
+              </button>
             </div>
             <div class="px-2 pb-2 flex flex-col gap-2">
               <div class="flex items-baseline justify-between">
-                <h3 class="text-headline-md font-headline-md text-primary font-semibold">Atelier Solis</h3>
+                <h3 class="text-headline-md font-headline-md text-primary font-semibold">Synapse Analytics &mdash; Predictive Data Intelligence Dashboard</h3>
                 <span class="text-body-sm font-body-sm text-outline font-mono">2023</span>
               </div>
-              <p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
-                Brutalist concrete warehouse softened by sun-bleached linen and cedar. The project breathes warmth into industrial relics through natural thermal mass and organic weaves.
+              <p class="text-body-sm font-body-sm text-on-surface-variant">
+                Predictive machine learning models mapped into intuitive visual narratives, turning high-dimensional telemetry into actionable executive decisions.
               </p>
               <div class="flex flex-wrap gap-1.5 pt-1">
                 <span class="px-2.5 py-0.5 rounded-full bg-secondary-fixed-dim text-on-secondary-fixed text-label-sm font-label-sm uppercase tracking-wider">
-                  Sun-bleached Linen
+                  Data Science
+                </span>
+                <span class="px-2.5 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed-variant text-label-sm font-label-sm uppercase tracking-wider">
+                  Predictive Modeling
                 </span>
                 <span class="px-2.5 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant text-label-sm font-label-sm uppercase tracking-wider">
-                  Adaptive Reuse
+                  Data Visualization
                 </span>
               </div>
             </div>
@@ -550,40 +531,40 @@
       <!-- ================================================================
            DESIGNER BIO & PHILOSOPHY SECTION
            ================================================================ -->
-      <section id="about" class="px-margin mb-space-xl">
-        <div class="bg-surface-container-low rounded-xl p-space-md sm:p-space-lg flex flex-col gap-space-md border border-surface-container-high/60">
+      <section class="scroll-mt-20 px-margin mb-space-xl transition-all duration-500 rounded-xl" id="about-section">
+        <div class="bg-surface-container-low rounded-xl p-space-md flex flex-col gap-space-md border border-outline-variant/20 shadow-sm">
           <div class="flex flex-col sm:flex-row gap-space-md items-center sm:items-start">
-            <div class="w-28 h-28 rounded-full overflow-hidden shrink-0 bg-surface-container-high p-1 shadow-sm border border-outline-variant/50">
-              <img alt="Kai Thorne Portrait" class="w-full h-full rounded-full object-cover" src="assets/kai/profile.jpg" onerror="this.src='https://lh3.googleusercontent.com/aida-public/AB6AXuC5z_9VYr48SKLcPMwm-uSoMXMFWld9Jni3XkBXerkGVbviVE-OI2ilhqt22k8I2qg-XqMNBQhSL8hr2tiXtam6PDhAUUnim3r_gdNmJbm06KbZ_IuegjCbS0Gt85JLRuh4hAy-i8kTbRKUUJtkpFWjDmEkAJRmWKw58pLgA9_p6y6eP85Md9NMXNwjZaNdcyY42t-5mD2_c1zUbP0kdrUenSST36HxCKotprJ_frB-6b6ergeMMyk'"/>
+            <div class="w-28 h-28 rounded-full overflow-hidden shrink-0 bg-surface-container-high p-1 shadow-md ring-1 ring-outline-variant/30">
+              <img alt="Bhavishya Pareek Portrait" class="w-full h-full rounded-full object-cover" src="assets/bhavishya/profile.jpg" onerror="this.src='https://lh3.googleusercontent.com/aida/AEtjO1WD9nzEy1GL0egBi5gXpOwpzIzAyjdXmwwZlO7p9yTgsyMw6rAThSg97ET9FBM-y3UpzOPz0SFrHAxOC35AcXYV04JWPuFA88YoM1KrrT8Ju1HJIUV40CQQJhz2VgNqABkKzeK0EVsNKcUgwzdBhPXbnNyEtvUBlZeaTh0wZ4oXMG-wXGjv6xJgB0orRAwqK5LSNRdw58TqNPswECu8K8iOcr0VbeJd85XPMYc9clU'"/>
             </div>
             <div class="flex flex-col gap-1 text-center sm:text-left">
               <span class="text-label-sm font-label-sm uppercase tracking-widest text-outline">Studio Philosophy</span>
-              <h3 class="text-headline-md font-headline-md text-primary font-semibold">Kai Thorne</h3>
+              <h3 class="text-headline-md font-headline-md text-primary font-semibold">Bhavishya Pareek</h3>
               <p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
-                Operating from Zurich and Tokyo, Studio Kai bridges traditional craft heritage with contemporary spatial choreography, emphasizing how natural light sculpts physical materiality.
+                Operating at the convergence of tactile human-computer interaction, high-craft web systems, and intelligent machine learning architectures.
               </p>
             </div>
           </div>
 
-          <div class="p-4 rounded-lg bg-surface-container flex items-start gap-3 border border-surface-container-high/60">
+          <div class="p-4 rounded-lg bg-surface-container flex items-start gap-3 border border-outline-variant/20">
             <span class="material-symbols-outlined text-outline text-[22px] shrink-0">format_quote</span>
             <blockquote class="text-body-md font-body-md italic text-primary">
-              &ldquo;Simplicity is not the absence of clutter, but the mastery of proportion and texture.&rdquo;
+              &ldquo;Bridging sensory interface craft with algorithmic precision and intelligent data systems.&rdquo;
             </blockquote>
           </div>
 
           <div class="grid grid-cols-3 gap-2 text-center pt-1">
-            <div class="flex flex-col p-2.5 rounded-lg bg-surface-bright shadow-sm border border-surface-container-high/40">
+            <div class="flex flex-col p-2.5 rounded-lg bg-surface-bright border border-outline-variant/15 shadow-sm">
+              <span class="text-headline-md font-headline-md text-primary font-semibold">18+</span>
+              <span class="text-label-sm font-label-sm uppercase text-outline">Deployed Systems</span>
+            </div>
+            <div class="flex flex-col p-2.5 rounded-lg bg-surface-bright border border-outline-variant/15 shadow-sm">
               <span class="text-headline-md font-headline-md text-primary font-semibold">12+</span>
-              <span class="text-label-sm font-label-sm uppercase text-outline">Built Works</span>
+              <span class="text-label-sm font-label-sm uppercase text-outline">Design &amp; AI Models</span>
             </div>
-            <div class="flex flex-col p-2.5 rounded-lg bg-surface-bright shadow-sm border border-surface-container-high/40">
-              <span class="text-headline-md font-headline-md text-primary font-semibold">4</span>
-              <span class="text-label-sm font-label-sm uppercase text-outline">Design Awards</span>
-            </div>
-            <div class="flex flex-col p-2.5 rounded-lg bg-surface-bright shadow-sm border border-surface-container-high/40">
-              <span class="text-headline-md font-headline-md text-primary font-semibold">08</span>
-              <span class="text-label-sm font-label-sm uppercase text-outline">Exhibitions</span>
+            <div class="flex flex-col p-2.5 rounded-lg bg-surface-bright border border-outline-variant/15 shadow-sm">
+              <span class="text-headline-md font-headline-md text-primary font-semibold">99.4%</span>
+              <span class="text-label-sm font-label-sm uppercase text-outline">Model Precision</span>
             </div>
           </div>
         </div>
@@ -592,8 +573,8 @@
       <!-- ================================================================
            COMMISSION INQUIRIES / CONTACT SECTION
            ================================================================ -->
-      <section id="contact" class="px-margin mb-space-lg">
-        <div class="bg-surface-container rounded-xl p-space-md sm:p-space-lg flex flex-col gap-space-md shadow-sm border border-surface-container-high/60">
+      <section class="scroll-mt-20 px-margin mb-space-lg transition-all duration-500 rounded-xl" id="contact-section">
+        <div class="bg-surface-container rounded-xl p-space-md flex flex-col gap-space-md shadow-sm border border-outline-variant/30">
           <div class="flex flex-col gap-1">
             <div class="flex items-center gap-2">
               <span class="material-symbols-outlined text-secondary text-[20px]">edit_calendar</span>
@@ -601,22 +582,22 @@
             </div>
             <h2 class="text-headline-lg font-headline-lg text-primary font-semibold">Initiate a Dialogue</h2>
             <p class="text-body-sm font-body-sm text-on-surface-variant">
-              Currently taking select commissions for private residences, bespoke furniture series, and architectural consultations.
+              Currently taking select commissions for digital interfaces, machine learning infrastructure, and specialized data consultations.
             </p>
           </div>
 
-          <!-- Service Pills Selection -->
+          <!-- Service Pills Multi-Select / Toggle -->
           <div class="flex flex-col gap-2">
             <span class="text-label-sm font-label-sm uppercase tracking-wider text-outline font-medium">Service Focus</span>
             <div class="flex flex-wrap gap-2" id="service-pills">
-              <button class="service-pill px-3.5 py-1.5 rounded-full text-label-md font-label-md uppercase tracking-wide bg-primary-container text-surface-bright transition-all" data-service="spatial" type="button">
-                Spatial
+              <button class="service-pill px-3 py-1.5 rounded-full text-label-md font-label-md uppercase tracking-wide bg-primary-container text-surface-bright transition-all active:scale-95 shadow-sm" data-service="ui-web" type="button">
+                UI/UX &amp; Web
               </button>
-              <button class="service-pill px-3.5 py-1.5 rounded-full text-label-md font-label-md uppercase tracking-wide bg-surface-container-high text-on-surface transition-all" data-service="product" type="button">
-                Product
+              <button class="service-pill px-3 py-1.5 rounded-full text-label-md font-label-md uppercase tracking-wide bg-surface-container-high text-on-surface hover:bg-surface-variant transition-all active:scale-95" data-service="ai-ml" type="button">
+                AI/ML Engineering
               </button>
-              <button class="service-pill px-3.5 py-1.5 rounded-full text-label-md font-label-md uppercase tracking-wide bg-surface-container-high text-on-surface transition-all" data-service="consultation" type="button">
-                Consultation
+              <button class="service-pill px-3 py-1.5 rounded-full text-label-md font-label-md uppercase tracking-wide bg-surface-container-high text-on-surface hover:bg-surface-variant transition-all active:scale-95" data-service="consultation" type="button">
+                Data Science Consultation
               </button>
             </div>
           </div>
@@ -625,71 +606,131 @@
           <form class="flex flex-col gap-space-sm" id="commission-form">
             <div class="flex flex-col gap-1">
               <label class="text-label-sm font-label-sm uppercase tracking-wider text-outline" for="contact-name">Your Name / Organization</label>
-              <input class="h-12 px-3.5 rounded-lg bg-surface-bright text-body-md font-body-md text-on-surface placeholder:text-outline border border-surface-container-high focus:outline-none focus:ring-1 focus:ring-primary transition-all" id="contact-name" placeholder="e.g. Elena Rossi / Studio Lumina" required="" type="text"/>
+              <input class="h-12 px-3.5 rounded-lg bg-surface-bright text-body-md font-body-md text-on-surface placeholder:text-outline border border-outline-variant/30 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all" id="contact-name" placeholder="e.g. Elena Rossi / Studio Lumina" required="" type="text"/>
             </div>
             <div class="flex flex-col gap-1">
               <label class="text-label-sm font-label-sm uppercase tracking-wider text-outline" for="contact-email">Email Address</label>
-              <input class="h-12 px-3.5 rounded-lg bg-surface-bright text-body-md font-body-md text-on-surface placeholder:text-outline border border-surface-container-high focus:outline-none focus:ring-1 focus:ring-primary transition-all" id="contact-email" placeholder="name@domain.com" required="" type="email"/>
+              <input class="h-12 px-3.5 rounded-lg bg-surface-bright text-body-md font-body-md text-on-surface placeholder:text-outline border border-outline-variant/30 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all" id="contact-email" placeholder="name@domain.com" required="" type="email"/>
             </div>
             <div class="flex flex-col gap-1">
               <label class="text-label-sm font-label-sm uppercase tracking-wider text-outline" for="contact-msg">Brief Scope</label>
-              <textarea class="p-3.5 rounded-lg bg-surface-bright text-body-md font-body-md text-on-surface placeholder:text-outline border border-surface-container-high focus:outline-none focus:ring-1 focus:ring-primary resize-none transition-all" id="contact-msg" placeholder="Tell me about the site, project timeline, or object scope..." required="" rows="3"></textarea>
+              <textarea class="p-3.5 rounded-lg bg-surface-bright text-body-md font-body-md text-on-surface placeholder:text-outline border border-outline-variant/30 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary resize-none transition-all" id="contact-msg" placeholder="Tell me about the site, project timeline, or object scope..." required="" rows="3"></textarea>
             </div>
-            <button class="h-12 mt-1 rounded-full bg-primary-container text-surface-bright font-label-lg text-label-lg uppercase tracking-wider flex items-center justify-center gap-2 active:scale-[0.98] hover:opacity-95 transition-all shadow-sm" id="submit-btn" type="submit">
+            <button class="h-12 mt-1 rounded-full bg-primary-container text-surface-bright font-label-lg text-label-lg uppercase tracking-wider flex items-center justify-center gap-2 active:scale-[0.98] hover:opacity-95 transition-transform shadow-sm" id="submit-btn" type="submit">
               <span class="material-symbols-outlined text-[18px]">send</span>
               <span>Send Commission Inquiry</span>
             </button>
           </form>
 
-          <!-- Confirmation Banner -->
-          <div class="hidden p-4 rounded-lg bg-secondary-fixed text-on-secondary-fixed flex flex-col gap-3 transition-all duration-300" id="confirmation-banner">
-            <div class="flex items-start gap-3">
-              <span class="material-symbols-outlined text-secondary text-[24px] shrink-0">check_circle</span>
-              <div class="flex flex-col gap-0.5">
-                <span class="font-headline-md text-headline-md font-semibold text-primary">Inquiry Dispatched</span>
-                <p class="text-body-sm font-body-sm text-on-secondary-fixed">
-                  Thank you &mdash; inquiry received. I'll get back to you within 24 hours with project availability and initial thoughts.
-                </p>
-              </div>
+          <!-- Confirmation Box with smooth transition -->
+          <div class="hidden p-4 rounded-xl bg-secondary-fixed text-on-secondary-fixed flex items-start gap-3.5 transition-all duration-500 ease-fluid border border-secondary" id="confirmation-banner">
+            <span class="material-symbols-outlined text-secondary text-[24px] shrink-0 mt-0.5">check_circle</span>
+            <div class="flex flex-col gap-1">
+              <span class="font-headline-md text-headline-md font-semibold text-primary">Inquiry Dispatched</span>
+              <p class="text-body-sm font-body-sm text-on-secondary-fixed leading-relaxed">
+                Thank you &mdash; inquiry received. I'll get back to you within 24 hours with project availability and initial thoughts.
+              </p>
+              <button class="self-start mt-2 px-3 py-1 rounded-full bg-surface-bright text-primary font-label-sm text-label-sm uppercase tracking-wider active:scale-95 transition-all" id="reset-form-btn" type="button">Send Another Note</button>
             </div>
-            <button id="reset-form-btn" type="button" class="self-start text-label-sm font-label-sm uppercase tracking-wider text-primary underline underline-offset-4 hover:opacity-80 pt-1">
-              &larr; Send another message
-            </button>
           </div>
         </div>
       </section>
+    </div>
 
-      <!-- Footer Info -->
-      <footer class="px-margin py-8 text-center flex flex-col items-center gap-2 text-outline">
-        <div class="flex items-center gap-2 text-label-sm uppercase tracking-widest font-mono">
-          <span>Studio Kai &bull; Spatial &amp; Industrial Design</span>
+    <!-- ==================================================================
+         TECHNICAL SPECS MODAL
+         ================================================================== -->
+    <div class="fixed inset-0 z-50 bg-primary/45 backdrop-blur-md hidden flex items-end justify-center p-0 transition-opacity duration-300 ease-fluid opacity-0" id="tech-modal" role="dialog" aria-modal="true" aria-labelledby="tech-modal-title">
+      <div class="w-full max-w-md bg-surface-bright rounded-t-2xl p-space-lg flex flex-col gap-space-md max-h-[85vh] overflow-y-auto transform translate-y-full transition-transform duration-300 ease-fluid shadow-2xl">
+        <div class="w-12 h-1.5 rounded-full bg-outline-variant self-center mb-1 cursor-pointer" id="modal-drag-bar"></div>
+        <div class="flex items-center justify-between">
+          <div class="flex flex-col">
+            <span class="text-label-sm font-label-sm uppercase tracking-wider text-outline">Lab Sheet / 01</span>
+            <h3 class="text-headline-md font-headline-md text-primary font-semibold" id="tech-modal-title">Ocular Silhouette (3D Specs)</h3>
+          </div>
+          <button class="w-9 h-9 rounded-full bg-surface-container hover:bg-surface-variant flex items-center justify-center text-primary active:scale-95 transition-transform" id="close-modal" aria-label="Close specifications modal">
+            <span class="material-symbols-outlined text-[20px]">close</span>
+          </button>
         </div>
-        <div class="text-xs text-outline/80">
-          Crafted with Three.js, Tailwind CSS &amp; Organic Materiality
+        <div class="grid grid-cols-2 gap-2 text-body-sm font-body-sm">
+          <div class="p-3 bg-surface-container rounded-lg flex flex-col gap-1 border border-outline-variant/20">
+            <span class="text-label-sm font-label-sm uppercase text-outline">Curvature</span>
+            <span class="text-primary font-medium">Base Curve 4</span>
+          </div>
+          <div class="p-3 bg-surface-container rounded-lg flex flex-col gap-1 border border-outline-variant/20">
+            <span class="text-label-sm font-label-sm uppercase text-outline">Hinge System</span>
+            <span class="text-primary font-medium">Custom 5-Barrel</span>
+          </div>
+          <div class="p-3 bg-surface-container rounded-lg flex flex-col gap-1 border border-outline-variant/20">
+            <span class="text-label-sm font-label-sm uppercase text-outline">Tolerance</span>
+            <span class="text-primary font-medium">&plusmn;0.05 mm</span>
+          </div>
+          <div class="p-3 bg-surface-container rounded-lg flex flex-col gap-1 border border-outline-variant/20">
+            <span class="text-label-sm font-label-sm uppercase text-outline">Origin</span>
+            <span class="text-primary font-medium">Cadore, Italy</span>
+          </div>
         </div>
-      </footer>
+        <p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+          Engineered for structural balance, pairing warmth of cured organic cellulose with cold, brushed artisan brass hardware and neural sensor micro-integrations.
+        </p>
+        <button class="h-11 rounded-full bg-surface-container-high text-primary hover:bg-surface-variant font-label-md text-label-md uppercase tracking-wider active:scale-[0.98] transition-transform" id="dismiss-modal-btn" type="button">
+          Dismiss
+        </button>
+      </div>
+    </div>
 
+    <!-- ==================================================================
+         PROJECT QUICK DETAIL MODAL
+         ================================================================== -->
+    <div class="fixed inset-0 z-50 bg-primary/45 backdrop-blur-md hidden flex items-end justify-center p-0 transition-opacity duration-300 ease-fluid opacity-0" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="project-modal-title">
+      <div class="w-full max-w-md bg-surface-bright rounded-t-2xl p-space-lg flex flex-col gap-space-md max-h-[85vh] overflow-y-auto transform translate-y-full transition-transform duration-300 ease-fluid shadow-2xl">
+        <div class="w-12 h-1.5 rounded-full bg-outline-variant self-center mb-1"></div>
+        <div class="flex items-center justify-between">
+          <div class="flex flex-col">
+            <span class="text-label-sm font-label-sm uppercase tracking-wider text-outline" id="project-modal-tag">Project Overview</span>
+            <h3 class="text-headline-md font-headline-md text-primary font-semibold" id="project-modal-title">Project Name</h3>
+          </div>
+          <button class="w-9 h-9 rounded-full bg-surface-container hover:bg-surface-variant flex items-center justify-center text-primary active:scale-95 transition-transform" id="close-project-modal" aria-label="Close project modal">
+            <span class="material-symbols-outlined text-[20px]">close</span>
+          </button>
+        </div>
+        <p class="text-body-md font-body-md text-on-surface-variant leading-relaxed" id="project-modal-desc">
+          Detailed context and specifications will load here.
+        </p>
+        <div class="p-3 bg-surface-container rounded-lg flex items-center justify-between text-body-sm font-body-sm">
+          <span class="text-outline">Collaborative Role</span>
+          <span class="text-primary font-medium">Lead UI/ML Engineer</span>
+        </div>
+        <div class="flex gap-2">
+          <a class="flex-1 h-11 rounded-full bg-primary-container text-surface-bright font-label-md text-label-md uppercase tracking-wider flex items-center justify-center gap-1 active:scale-[0.98] transition-transform" href="#contact-section" id="project-inquire-btn">
+            Inquire on Similar
+          </a>
+          <button class="h-11 px-5 rounded-full bg-surface-container-high text-primary font-label-md text-label-md uppercase tracking-wider active:scale-[0.98] transition-transform" id="dismiss-project-btn" type="button">
+            Close
+          </button>
+        </div>
+      </div>
     </div>
   </main>
 
   <!-- ====================================================================
-       FIXED FLOATING BOTTOM NAVIGATION BAR
+       FIXED BOTTOM NAVIGATION BAR
        ==================================================================== -->
   <div class="fixed bottom-0 w-full z-40 pb-safe pointer-events-none flex justify-center px-margin">
-    <nav id="bottom-nav" class="pointer-events-auto w-full max-w-sm h-14 rounded-full bg-surface-container-lowest/90 backdrop-blur-2xl shadow-[0_12px_32px_rgba(88,47,14,0.12)] border border-surface-container-high/80 px-2 flex items-center justify-between">
-      <a class="nav-pill flex items-center justify-center gap-1.5 h-10 px-3.5 rounded-full transition-all bg-primary-container text-surface-bright shadow-sm" data-path="works" href="#works">
+    <nav class="pointer-events-auto w-full max-w-sm h-14 rounded-full bg-surface-container-lowest/90 backdrop-blur-2xl shadow-[0_12px_32px_rgba(88,47,14,0.12)] border border-outline-variant/30 px-1.5 flex items-center justify-between" id="bottom-nav">
+      <a class="nav-tab flex items-center justify-center gap-1 h-10 px-3.5 rounded-full transition-all duration-300 ease-fluid bg-primary-container text-surface-bright shadow-sm" data-path="works" href="#works-section">
         <span class="material-symbols-outlined text-[18px]">architecture</span>
         <span class="font-label-md text-label-md tracking-wide">Works</span>
       </a>
-      <a class="nav-pill flex items-center justify-center gap-1.5 h-10 px-3.5 rounded-full text-on-surface-variant hover:text-on-surface transition-all" data-path="about" href="#about">
+      <a class="nav-tab flex items-center justify-center gap-1 h-10 px-3.5 rounded-full text-on-surface-variant hover:text-on-surface transition-all duration-300 ease-fluid" data-path="about" href="#about-section">
         <span class="material-symbols-outlined text-[18px]">person_outline</span>
         <span class="font-label-md text-label-md tracking-wide">About</span>
       </a>
-      <a class="nav-pill flex items-center justify-center gap-1.5 h-10 px-3.5 rounded-full text-on-surface-variant hover:text-on-surface transition-all" data-path="3d-lab" href="#3d-lab">
+      <a class="nav-tab flex items-center justify-center gap-1 h-10 px-3.5 rounded-full text-on-surface-variant hover:text-on-surface transition-all duration-300 ease-fluid" data-path="3d-lab" href="#lab-section">
         <span class="material-symbols-outlined text-[18px]">view_in_ar</span>
         <span class="font-label-md text-label-md tracking-wide">3D Lab</span>
       </a>
-      <a class="nav-pill flex items-center justify-center gap-1.5 h-10 px-3.5 rounded-full text-on-surface-variant hover:text-on-surface transition-all" data-path="contact" href="#contact">
+      <a class="nav-tab flex items-center justify-center gap-1 h-10 px-3.5 rounded-full text-on-surface-variant hover:text-on-surface transition-all duration-300 ease-fluid" data-path="contact" href="#contact-section">
         <span class="material-symbols-outlined text-[18px]">mail</span>
         <span class="font-label-md text-label-md tracking-wide">Contact</span>
       </a>
@@ -697,461 +738,491 @@
   </div>
 
   <!-- ====================================================================
-       INTERACTION SCRIPTS (THREE.JS + UI CONTROLS)
+       SCRIPTS: THREE.JS + UI CONTROLS + THEME TOGGLE
        ==================================================================== -->
   <script>
-  (function() {
-    // ----------------------------------------------------------------------
-    // 1. Three.js Interactive 3D Eyewear Specimen Scene
-    // ----------------------------------------------------------------------
-    const container = document.getElementById('threejs-container-ANIMATION_1');
-    if (container && typeof THREE !== 'undefined') {
-      const width = container.clientWidth || window.innerWidth;
-      const height = container.clientHeight || 320;
+    document.addEventListener('DOMContentLoaded', () => {
+      // 0. Theme Toggle Controller
+      const themeToggleBtn = document.getElementById('theme-toggle-btn');
+      const themeToggleIcon = document.getElementById('theme-toggle-icon');
 
-      const scene = new THREE.Scene();
-      const camera = new THREE.PerspectiveCamera(45, width / height, 0.1, 100);
-      camera.position.set(0, 0, 7.5);
-
-      const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
-      renderer.setSize(width, height);
-      renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
-      renderer.toneMapping = THREE.ACESFilmicToneMapping;
-      renderer.toneMappingExposure = 1.1;
-      container.appendChild(renderer.domElement);
-
-      // Lighting Setup
-      const ambientLight = new THREE.AmbientLight(0xf5ebe0, 1.4);
-      scene.add(ambientLight);
-
-      const dirLight1 = new THREE.DirectionalLight(0xffeedd, 2.4);
-      dirLight1.position.set(5, 8, 6);
-      scene.add(dirLight1);
-
-      const dirLight2 = new THREE.DirectionalLight(0x7f4f24, 1.3);
-      dirLight2.position.set(-5, -4, 4);
-      scene.add(dirLight2);
-
-      const pointLight = new THREE.PointLight(0xc2c5aa, 1.6, 10);
-      pointLight.position.set(0, 2, 3);
-      scene.add(pointLight);
-
-      // Group for Spectacles (3D Specs)
-      const specsGroup = new THREE.Group();
-
-      // Materials
-      const frameMaterial = new THREE.MeshStandardMaterial({
-        color: 0x582f0e, // Rich dark tortoise brown
-        roughness: 0.25,
-        metalness: 0.35,
-      });
-
-      const rimGold = new THREE.MeshStandardMaterial({
-        color: 0xa68a64, // Brushed warm metal/gold hinge accent
-        roughness: 0.3,
-        metalness: 0.8,
-      });
-
-      const lensMaterial = new THREE.MeshPhysicalMaterial({
-        color: 0xc2c5aa,
-        transmission: 0.85,
-        opacity: 0.6,
-        transparent: true,
-        roughness: 0.1,
-        ior: 1.5,
-        reflectivity: 0.5
-      });
-
-      // Left Rim & Lens (Round aesthetic editorial eyewear)
-      const rimRadius = 0.95;
-      const rimTube = 0.07;
-      const torusGeo = new THREE.TorusGeometry(rimRadius, rimTube, 32, 64);
-
-      const leftRim = new THREE.Mesh(torusGeo, frameMaterial);
-      leftRim.position.x = -1.25;
-      specsGroup.add(leftRim);
-
-      const lensGeo = new THREE.CylinderGeometry(rimRadius * 0.96, rimRadius * 0.96, 0.03, 32);
-      lensGeo.rotateX(Math.PI / 2);
-      const leftLens = new THREE.Mesh(lensGeo, lensMaterial);
-      leftLens.position.x = -1.25;
-      specsGroup.add(leftLens);
-
-      // Right Rim & Lens
-      const rightRim = new THREE.Mesh(torusGeo, frameMaterial);
-      rightRim.position.x = 1.25;
-      specsGroup.add(rightRim);
-
-      const rightLens = new THREE.Mesh(lensGeo, lensMaterial);
-      rightLens.position.x = 1.25;
-      specsGroup.add(rightLens);
-
-      // Bridge (Keyhole curved aesthetic bridge)
-      const bridgeCurve = new THREE.CubicBezierCurve3(
-        new THREE.Vector3(-0.35, 0.15, 0),
-        new THREE.Vector3(-0.15, 0.45, 0.05),
-        new THREE.Vector3(0.15, 0.45, 0.05),
-        new THREE.Vector3(0.35, 0.15, 0)
-      );
-      const bridgeGeo = new THREE.TubeGeometry(bridgeCurve, 24, 0.06, 12, false);
-      const bridge = new THREE.Mesh(bridgeGeo, rimGold);
-      specsGroup.add(bridge);
-
-      // Top Brow Accent Bar (Minimalist aesthetic double bridge)
-      const topBarGeo = new THREE.CylinderGeometry(0.035, 0.035, 1.2, 16);
-      topBarGeo.rotateZ(Math.PI / 2);
-      const topBar = new THREE.Mesh(topBarGeo, rimGold);
-      topBar.position.set(0, 0.72, 0.02);
-      specsGroup.add(topBar);
-
-      // Hinges & Temples (Side arms extending back)
-      function createTemple(isLeft) {
-        const armGroup = new THREE.Group();
-        const hinge = new THREE.Mesh(new THREE.CylinderGeometry(0.07, 0.07, 0.16, 16), rimGold);
-        hinge.rotation.x = Math.PI / 2;
-        armGroup.add(hinge);
-
-        const stemCurve = new THREE.CatmullRomCurve3([
-          new THREE.Vector3(0, 0, 0),
-          new THREE.Vector3(0, 0, -1.8),
-          new THREE.Vector3(0, -0.3, -2.6),
-          new THREE.Vector3(0, -0.7, -3.0)
-        ]);
-        const stemGeo = new THREE.TubeGeometry(stemCurve, 32, 0.05, 12, false);
-        const stem = new THREE.Mesh(stemGeo, frameMaterial);
-        armGroup.add(stem);
-
-        armGroup.position.set(isLeft ? -2.2 : 2.2, 0.25, 0);
-        armGroup.rotation.y = isLeft ? 0.08 : -0.08;
-        return armGroup;
-      }
-
-      specsGroup.add(createTemple(true));
-      specsGroup.add(createTemple(false));
-
-      // Floating Aesthetic Dust / Aura Spheres around specs
-      const particlesCount = 24;
-      const pGroup = new THREE.Group();
-      const pGeo = new THREE.SphereGeometry(0.04, 12, 12);
-      const pMat = new THREE.MeshStandardMaterial({ color: 0xa4ac86, roughness: 0.4 });
-      for (let i = 0; i < particlesCount; i++) {
-        const p = new THREE.Mesh(pGeo, pMat);
-        p.position.set(
-          (Math.random() - 0.5) * 6,
-          (Math.random() - 0.5) * 3,
-          (Math.random() - 0.5) * 4
-        );
-        pGroup.add(p);
-      }
-      scene.add(pGroup);
-      scene.add(specsGroup);
-
-      // Interactive mouse / touch tilt controls
-      const DEFAULT_ROT_X = 0.1;
-      const DEFAULT_ROT_Y = -0.35;
-      let targetRotX = DEFAULT_ROT_X;
-      let targetRotY = DEFAULT_ROT_Y;
-      let isDragging = false;
-      let lastPointerX = 0;
-      let lastPointerY = 0;
-
-      function handlePointerMove(event) {
-        const clientX = event.touches ? event.touches[0].clientX : event.clientX;
-        const clientY = event.touches ? event.touches[0].clientY : event.clientY;
-        const rect = container.getBoundingClientRect();
-
-        if (isDragging) {
-          const deltaX = (clientX - lastPointerX) / rect.width;
-          const deltaY = (clientY - lastPointerY) / rect.height;
-          targetRotY += deltaX * 2.8;
-          targetRotX += deltaY * 2.0;
-          targetRotX = Math.max(-1.1, Math.min(1.1, targetRotX));
+      function setTheme(isDark) {
+        if (isDark) {
+          document.documentElement.classList.add('dark');
+          if (themeToggleIcon) themeToggleIcon.textContent = 'light_mode';
+          localStorage.setItem('studio_bhavishya_theme', 'dark');
         } else {
-          const mouseX = ((clientX - rect.left) / rect.width) * 2 - 1;
-          const mouseY = -((clientY - rect.top) / rect.height) * 2 + 1;
-          targetRotY = mouseX * 0.85;
-          targetRotX = -mouseY * 0.55 + 0.15;
+          document.documentElement.classList.remove('dark');
+          if (themeToggleIcon) themeToggleIcon.textContent = 'dark_mode';
+          localStorage.setItem('studio_bhavishya_theme', 'light');
         }
-
-        lastPointerX = clientX;
-        lastPointerY = clientY;
       }
 
-      container.addEventListener('mousedown', (e) => {
-        isDragging = true;
-        lastPointerX = e.clientX;
-        lastPointerY = e.clientY;
-      });
+      const savedTheme = localStorage.getItem('studio_bhavishya_theme');
+      if (savedTheme === 'dark' || (!savedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        setTheme(true);
+      } else {
+        setTheme(false);
+      }
 
-      window.addEventListener('mouseup', () => { isDragging = false; });
+      if (themeToggleBtn) {
+        themeToggleBtn.addEventListener('click', () => {
+          const isDarkNow = document.documentElement.classList.contains('dark');
+          setTheme(!isDarkNow);
+        });
+      }
 
-      container.addEventListener('touchstart', (e) => {
-        if (e.touches.length === 1) {
-          isDragging = true;
-          lastPointerX = e.touches[0].clientX;
-          lastPointerY = e.touches[0].clientY;
-        }
-      }, { passive: true });
+      // 1. Accordion Smooth Expansion with CSS classes
+      const toggleSpecsBtn = document.getElementById('toggle-specs');
+      const specsContent = document.getElementById('specs-content');
+      const specsChevron = document.getElementById('specs-chevron');
 
-      window.addEventListener('touchend', () => { isDragging = false; });
-
-      container.addEventListener('mousemove', handlePointerMove);
-      container.addEventListener('touchmove', handlePointerMove, { passive: true });
-
-      // Reset View Button
-      const resetBtn = document.getElementById('reset-view-btn');
-      if (resetBtn) {
-        resetBtn.addEventListener('click', (e) => {
+      if (toggleSpecsBtn && specsContent && specsChevron) {
+        toggleSpecsBtn.addEventListener('click', (e) => {
           e.preventDefault();
-          e.stopPropagation();
-          targetRotX = DEFAULT_ROT_X;
-          targetRotY = DEFAULT_ROT_Y;
+          const isExpanded = specsContent.classList.contains('expanded');
+          if (isExpanded) {
+            specsContent.classList.remove('expanded');
+            specsChevron.style.transform = 'rotate(0deg)';
+            toggleSpecsBtn.setAttribute('aria-expanded', 'false');
+          } else {
+            specsContent.classList.add('expanded');
+            specsChevron.style.transform = 'rotate(180deg)';
+            toggleSpecsBtn.setAttribute('aria-expanded', 'true');
+          }
         });
       }
 
-      // Animation Loop
-      const clock = new THREE.Clock();
-      function animate() {
-        requestAnimationFrame(animate);
-        const elapsedTime = clock.getElapsedTime();
-
-        const autoFloatY = Math.sin(elapsedTime * 1.4) * 0.12;
-        const autoSway = Math.sin(elapsedTime * 0.8) * 0.12;
-
-        specsGroup.position.y = autoFloatY;
-        specsGroup.rotation.y += (targetRotY + autoSway - specsGroup.rotation.y) * 0.05;
-        specsGroup.rotation.x += (targetRotX - specsGroup.rotation.x) * 0.05;
-        specsGroup.rotation.z = Math.sin(elapsedTime * 1.1) * 0.03;
-
-        pGroup.rotation.y = elapsedTime * 0.04;
-
-        renderer.render(scene, camera);
-      }
-      animate();
-
-      // Resize Handler
-      window.addEventListener('resize', () => {
-        const newW = container.clientWidth || window.innerWidth;
-        const newH = container.clientHeight || 320;
-        camera.aspect = newW / newH;
-        camera.updateProjectionMatrix();
-        renderer.setSize(newW, newH);
-      });
-    }
-
-    // ----------------------------------------------------------------------
-    // 2. Specifications Accordion Toggle
-    // ----------------------------------------------------------------------
-    const toggleBtn = document.getElementById('toggle-specs');
-    const specsContent = document.getElementById('specs-content');
-    const chevron = document.getElementById('specs-chevron');
-
-    if (toggleBtn && specsContent && chevron) {
-      toggleBtn.addEventListener('click', function() {
-        const isHidden = specsContent.classList.contains('hidden');
-        if (isHidden) {
-          specsContent.classList.remove('hidden');
-          chevron.style.transform = 'rotate(180deg)';
-          toggleBtn.setAttribute('aria-expanded', 'true');
-        } else {
-          specsContent.classList.add('hidden');
-          chevron.style.transform = 'rotate(0deg)';
-          toggleBtn.setAttribute('aria-expanded', 'false');
-        }
-      });
-    }
-
-    // ----------------------------------------------------------------------
-    // 3. Technical Specs Modal Handlers
-    // ----------------------------------------------------------------------
-    const modalTrigger = document.getElementById('modal-trigger');
-    const modal = document.getElementById('tech-modal');
-    const closeModal = document.getElementById('close-modal');
-    const dismissModalBtn = document.getElementById('dismiss-modal-btn');
-
-    function openModal() {
-      if (modal) {
+      // 2. Modals with smooth backdrop-blur & slide-up transitions
+      function openFluidModal(modal) {
+        if (!modal) return;
         modal.classList.remove('hidden');
-        document.body.style.overflow = 'hidden';
-      }
-    }
-    function hideModal() {
-      if (modal) {
-        modal.classList.add('hidden');
-        document.body.style.overflow = '';
-      }
-    }
-
-    if (modalTrigger) modalTrigger.addEventListener('click', openModal);
-    if (closeModal) closeModal.addEventListener('click', hideModal);
-    if (dismissModalBtn) dismissModalBtn.addEventListener('click', hideModal);
-
-    if (modal) {
-      modal.addEventListener('click', function(e) {
-        if (e.target === modal) hideModal();
-      });
-    }
-
-    document.addEventListener('keydown', function(e) {
-      if (e.key === 'Escape' && modal && !modal.classList.contains('hidden')) {
-        hideModal();
-      }
-    });
-
-    // ----------------------------------------------------------------------
-    // 4. Category Filter Tabs
-    // ----------------------------------------------------------------------
-    const filterButtons = document.querySelectorAll('#filter-bar .filter-chip');
-    const projectItems = document.querySelectorAll('.project-item');
-
-    filterButtons.forEach(btn => {
-      btn.addEventListener('click', function() {
-        const targetCategory = this.getAttribute('data-filter');
-
-        // Update tab styles
-        filterButtons.forEach(b => {
-          b.classList.remove('bg-primary-container', 'text-surface-bright');
-          b.classList.add('bg-surface-container', 'text-secondary');
-          b.setAttribute('aria-selected', 'false');
-        });
-        this.classList.remove('bg-surface-container', 'text-secondary');
-        this.classList.add('bg-primary-container', 'text-surface-bright');
-        this.setAttribute('aria-selected', 'true');
-
-        // Filter projects with clean fade
-        projectItems.forEach(item => {
-          const itemCat = item.getAttribute('data-category');
-          if (targetCategory === 'all' || itemCat === targetCategory) {
-            item.style.display = 'flex';
-            setTimeout(() => {
-              item.style.opacity = '1';
-              item.style.transform = 'translateY(0)';
-            }, 10);
-          } else {
-            item.style.opacity = '0';
-            item.style.transform = 'translateY(8px)';
-            setTimeout(() => {
-              item.style.display = 'none';
-            }, 200);
+        requestAnimationFrame(() => {
+          modal.classList.remove('opacity-0');
+          modal.classList.add('opacity-100');
+          const panel = modal.firstElementChild;
+          if (panel) {
+            panel.classList.remove('translate-y-full');
+            panel.classList.add('translate-y-0');
           }
         });
-      });
-    });
-
-    // ----------------------------------------------------------------------
-    // 5. Commission Service Focus Selection
-    // ----------------------------------------------------------------------
-    const servicePills = document.querySelectorAll('.service-pill');
-    servicePills.forEach(pill => {
-      pill.addEventListener('click', function() {
-        servicePills.forEach(p => {
-          p.classList.remove('bg-primary-container', 'text-surface-bright');
-          p.classList.add('bg-surface-container-high', 'text-on-surface');
-        });
-        this.classList.remove('bg-surface-container-high', 'text-on-surface');
-        this.classList.add('bg-primary-container', 'text-surface-bright');
-      });
-    });
-
-    // ----------------------------------------------------------------------
-    // 6. Commission Form Handling
-    // ----------------------------------------------------------------------
-    const commissionForm = document.getElementById('commission-form');
-    const confirmationBanner = document.getElementById('confirmation-banner');
-    const resetFormBtn = document.getElementById('reset-form-btn');
-
-    if (commissionForm && confirmationBanner) {
-      commissionForm.addEventListener('submit', function(e) {
-        e.preventDefault();
-        commissionForm.classList.add('hidden');
-        confirmationBanner.classList.remove('hidden');
-      });
-    }
-
-    if (resetFormBtn && commissionForm && confirmationBanner) {
-      resetFormBtn.addEventListener('click', function() {
-        commissionForm.reset();
-        commissionForm.classList.remove('hidden');
-        confirmationBanner.classList.add('hidden');
-      });
-    }
-
-    // ----------------------------------------------------------------------
-    // 7. Navigation Drawer (Header Menu)
-    // ----------------------------------------------------------------------
-    const headerMenuBtn = document.getElementById('header-menu-btn');
-    const navDrawer = document.getElementById('nav-drawer');
-    const drawerPanel = document.getElementById('drawer-panel');
-    const closeDrawerBtn = document.getElementById('close-drawer-btn');
-    const drawerLinks = document.querySelectorAll('.drawer-link');
-
-    function openDrawer() {
-      if (navDrawer && drawerPanel) {
-        navDrawer.classList.remove('hidden');
-        requestAnimationFrame(() => {
-          drawerPanel.classList.remove('translate-x-full');
-        });
         document.body.style.overflow = 'hidden';
       }
-    }
 
-    function closeDrawer() {
-      if (navDrawer && drawerPanel) {
-        drawerPanel.classList.add('translate-x-full');
+      function closeFluidModal(modal) {
+        if (!modal) return;
+        const panel = modal.firstElementChild;
+        if (panel) {
+          panel.classList.remove('translate-y-0');
+          panel.classList.add('translate-y-full');
+        }
+        modal.classList.remove('opacity-100');
+        modal.classList.add('opacity-0');
         setTimeout(() => {
-          navDrawer.classList.add('hidden');
+          modal.classList.add('hidden');
           document.body.style.overflow = '';
-        }, 300);
+        }, 320);
       }
-    }
 
-    if (headerMenuBtn) headerMenuBtn.addEventListener('click', openDrawer);
-    if (closeDrawerBtn) closeDrawerBtn.addEventListener('click', closeDrawer);
-    if (navDrawer) {
-      navDrawer.addEventListener('click', function(e) {
-        if (e.target === navDrawer) closeDrawer();
-      });
-    }
-    drawerLinks.forEach(link => {
-      link.addEventListener('click', closeDrawer);
-    });
+      // Specs Tech Modal
+      const modalTrigger = document.getElementById('modal-trigger');
+      const techModal = document.getElementById('tech-modal');
+      const closeModal = document.getElementById('close-modal');
+      const dismissModalBtn = document.getElementById('dismiss-modal-btn');
 
-    // ----------------------------------------------------------------------
-    // 8. Bottom Navigation Active ScrollSpy
-    // ----------------------------------------------------------------------
-    const navPills = document.querySelectorAll('.nav-pill');
-    const sections = ['works', 'about', '3d-lab', 'contact'].map(id => document.getElementById(id)).filter(Boolean);
+      if (modalTrigger) modalTrigger.addEventListener('click', () => openFluidModal(techModal));
+      if (closeModal) closeModal.addEventListener('click', () => closeFluidModal(techModal));
+      if (dismissModalBtn) dismissModalBtn.addEventListener('click', () => closeFluidModal(techModal));
+      if (techModal) {
+        techModal.addEventListener('click', (e) => {
+          if (e.target === techModal) closeFluidModal(techModal);
+        });
+      }
 
-    function updateActiveNav() {
-      const scrollY = window.scrollY + 200;
-      let currentSectionId = '';
+      // Project Detail Modal
+      const projectModal = document.getElementById('project-modal');
+      const closeProjModal = document.getElementById('close-project-modal');
+      const dismissProjBtn = document.getElementById('dismiss-project-btn');
+      const projInquireBtn = document.getElementById('project-inquire-btn');
+      const projModalTitle = document.getElementById('project-modal-title');
+      const projModalDesc = document.getElementById('project-modal-desc');
+      const projModalTag = document.getElementById('project-modal-tag');
 
-      sections.forEach(section => {
-        const top = section.offsetTop;
-        const height = section.offsetHeight;
-        if (scrollY >= top && scrollY < top + height) {
-          currentSectionId = section.getAttribute('id');
+      if (closeProjModal) closeProjModal.addEventListener('click', () => closeFluidModal(projectModal));
+      if (dismissProjBtn) dismissProjBtn.addEventListener('click', () => closeFluidModal(projectModal));
+      if (projInquireBtn) {
+        projInquireBtn.addEventListener('click', () => {
+          closeFluidModal(projectModal);
+          triggerSectionHighlight('contact-section');
+        });
+      }
+      if (projectModal) {
+        projectModal.addEventListener('click', (e) => {
+          if (e.target === projectModal) closeFluidModal(projectModal);
+        });
+      }
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+          if (techModal && !techModal.classList.contains('hidden')) closeFluidModal(techModal);
+          if (projectModal && !projectModal.classList.contains('hidden')) closeFluidModal(projectModal);
         }
       });
 
-      if (currentSectionId) {
-        navPills.forEach(pill => {
-          const path = pill.getAttribute('data-path');
-          if (path === currentSectionId) {
-            pill.classList.remove('text-on-surface-variant');
-            pill.classList.add('bg-primary-container', 'text-surface-bright', 'shadow-sm');
+      const projectCards = document.querySelectorAll('.project-card');
+      projectCards.forEach(card => {
+        card.addEventListener('click', () => {
+          const title = card.getAttribute('data-title');
+          const desc = card.getAttribute('data-desc');
+          const tag = card.getAttribute('data-tag');
+          if (projModalTitle) projModalTitle.textContent = title;
+          if (projModalDesc) projModalDesc.textContent = desc;
+          if (projModalTag) projModalTag.textContent = tag;
+          openFluidModal(projectModal);
+        });
+      });
+
+      // 3. Staggered Fluid Project Filter Tabs
+      const filterChips = document.querySelectorAll('#filter-bar .filter-chip');
+      filterChips.forEach(chip => {
+        chip.addEventListener('click', () => {
+          const target = chip.getAttribute('data-filter');
+
+          filterChips.forEach(c => {
+            c.classList.remove('bg-primary-container', 'text-surface-bright', 'shadow-sm', 'active-filter');
+            c.classList.add('bg-surface-container', 'text-secondary');
+          });
+          chip.classList.remove('bg-surface-container', 'text-secondary');
+          chip.classList.add('bg-primary-container', 'text-surface-bright', 'shadow-sm', 'active-filter');
+
+          let visibleIndex = 0;
+          projectCards.forEach((card) => {
+            const cat = card.getAttribute('data-category');
+            const shouldShow = (target === 'all' || cat === target);
+
+            if (shouldShow) {
+              card.style.display = 'flex';
+              setTimeout(() => {
+                card.classList.remove('item-hidden');
+                card.classList.add('item-visible');
+              }, visibleIndex * 40 + 10);
+              visibleIndex++;
+            } else {
+              card.classList.remove('item-visible');
+              card.classList.add('item-hidden');
+              setTimeout(() => {
+                if (card.classList.contains('item-hidden')) {
+                  card.style.display = 'none';
+                }
+              }, 300);
+            }
+          });
+        });
+      });
+
+      // 4. Smooth Nav Glide & Section Highlighting
+      const navTabs = document.querySelectorAll('.nav-tab');
+      function updateNavActive(targetPath) {
+        navTabs.forEach(tab => {
+          const path = tab.getAttribute('data-path');
+          if (path === targetPath) {
+            tab.classList.add('bg-primary-container', 'text-surface-bright', 'shadow-sm');
+            tab.classList.remove('text-on-surface-variant');
           } else {
-            pill.classList.add('text-on-surface-variant');
-            pill.classList.remove('bg-primary-container', 'text-surface-bright', 'shadow-sm');
+            tab.classList.remove('bg-primary-container', 'text-surface-bright', 'shadow-sm');
+            tab.classList.add('text-on-surface-variant');
           }
         });
       }
-    }
 
-    window.addEventListener('scroll', updateActiveNav, { passive: true });
-    updateActiveNav();
+      function triggerSectionHighlight(sectionId) {
+        const sec = document.getElementById(sectionId);
+        if (sec) {
+          sec.classList.remove('section-focus-pulse');
+          void sec.offsetWidth;
+          sec.classList.add('section-focus-pulse');
+        }
+      }
 
-  })();
+      navTabs.forEach(tab => {
+        tab.addEventListener('click', (e) => {
+          e.preventDefault();
+          const targetId = tab.getAttribute('href').substring(1);
+          const targetEl = document.getElementById(targetId);
+
+          if (targetEl) {
+            const targetY = targetEl.getBoundingClientRect().top + window.pageYOffset - 72;
+            window.scrollTo({
+              top: targetY,
+              behavior: 'smooth'
+            });
+            updateNavActive(tab.getAttribute('data-path'));
+            triggerSectionHighlight(targetId);
+          }
+        });
+      });
+
+      // Intersection Observer for scrollspy
+      const observedSections = [
+        { id: 'works-section', path: 'works' },
+        { id: 'about-section', path: 'about' },
+        { id: 'lab-section', path: '3d-lab' },
+        { id: 'contact-section', path: 'contact' }
+      ];
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const match = observedSections.find(s => s.id === entry.target.id);
+            if (match) updateNavActive(match.path);
+          }
+        });
+      }, { rootMargin: '-20% 0px -60% 0px', threshold: 0.1 });
+
+      observedSections.forEach(item => {
+        const el = document.getElementById(item.id);
+        if (el) observer.observe(el);
+      });
+
+      // 5. Interactive Service Focus Pills
+      const servicePills = document.querySelectorAll('.service-pill');
+      servicePills.forEach(pill => {
+        pill.addEventListener('click', () => {
+          servicePills.forEach(p => {
+            p.classList.remove('bg-primary-container', 'text-surface-bright', 'shadow-sm');
+            p.classList.add('bg-surface-container-high', 'text-on-surface');
+          });
+          pill.classList.remove('bg-surface-container-high', 'text-on-surface');
+          pill.classList.add('bg-primary-container', 'text-surface-bright', 'shadow-sm');
+        });
+      });
+
+      // 6. Commission Form Submit Feedback
+      const commissionForm = document.getElementById('commission-form');
+      const confirmationBanner = document.getElementById('confirmation-banner');
+      const resetFormBtn = document.getElementById('reset-form-btn');
+
+      if (commissionForm && confirmationBanner) {
+        commissionForm.addEventListener('submit', (e) => {
+          e.preventDefault();
+          commissionForm.classList.add('hidden');
+          confirmationBanner.classList.remove('hidden');
+        });
+      }
+
+      if (resetFormBtn && commissionForm && confirmationBanner) {
+        resetFormBtn.addEventListener('click', () => {
+          commissionForm.reset();
+          confirmationBanner.classList.add('hidden');
+          commissionForm.classList.remove('hidden');
+        });
+      }
+
+      // 7. Interactive Three.js 3D Specs Geometry Viewport
+      const canvas = document.getElementById('three-specs-canvas');
+      const resetBtn = document.getElementById('reset-view-btn');
+
+      if (canvas && typeof THREE !== 'undefined') {
+        const width = canvas.parentElement.clientWidth || 340;
+        const height = 300;
+
+        const scene = new THREE.Scene();
+
+        const camera = new THREE.PerspectiveCamera(45, width / height, 0.1, 100);
+        camera.position.set(0, 0.8, 4.2);
+
+        const renderer = new THREE.WebGLRenderer({ canvas: canvas, antialias: true, alpha: true });
+        renderer.setSize(width, height);
+        renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+
+        // Ambient and Directional Lighting matching Earthy Warm Palette
+        const ambientLight = new THREE.AmbientLight(0xfaf9f5, 1.1);
+        scene.add(ambientLight);
+
+        const warmLight = new THREE.DirectionalLight(0xffdcc2, 1.4);
+        warmLight.position.set(4, 5, 3);
+        scene.add(warmLight);
+
+        const coolFill = new THREE.DirectionalLight(0x5a6240, 0.6);
+        coolFill.position.set(-3, -2, -2);
+        scene.add(coolFill);
+
+        // Eyewear Silhouette Group (Specimen 01: Ocular Silhouette)
+        const glassesGroup = new THREE.Group();
+
+        // Frame Acetate Material (Terracotta #582f0e)
+        const frameMat = new THREE.MeshStandardMaterial({
+          color: 0x582f0e,
+          roughness: 0.28,
+          metalness: 0.2,
+        });
+
+        // Lens Material (Tinted transparent warm brass with physical transmission)
+        const lensMat = new THREE.MeshPhysicalMaterial({
+          color: 0x936639,
+          transmission: 0.65,
+          opacity: 0.75,
+          transparent: true,
+          roughness: 0.1,
+          ior: 1.5,
+          reflectivity: 0.5
+        });
+
+        // Brass Hinge Material
+        const brassMat = new THREE.MeshStandardMaterial({
+          color: 0xc2c5aa,
+          metalness: 0.85,
+          roughness: 0.35,
+        });
+
+        // Left & Right Rims (Torus)
+        const rimGeo = new THREE.TorusGeometry(0.7, 0.08, 16, 48);
+        const leftRim = new THREE.Mesh(rimGeo, frameMat);
+        leftRim.position.x = -0.88;
+        glassesGroup.add(leftRim);
+
+        const rightRim = new THREE.Mesh(rimGeo, frameMat);
+        rightRim.position.x = 0.88;
+        glassesGroup.add(rightRim);
+
+        // Lenses
+        const lensGeo = new THREE.CylinderGeometry(0.68, 0.68, 0.03, 32);
+        lensGeo.rotateX(Math.PI / 2);
+        const leftLens = new THREE.Mesh(lensGeo, lensMat);
+        leftLens.position.x = -0.88;
+        glassesGroup.add(leftLens);
+
+        const rightLens = new THREE.Mesh(lensGeo, lensMat);
+        rightLens.position.x = 0.88;
+        glassesGroup.add(rightLens);
+
+        // Acetate Bridge Bar
+        const bridgeGeo = new THREE.CylinderGeometry(0.06, 0.06, 0.45, 16);
+        bridgeGeo.rotateZ(Math.PI / 2);
+        const bridge = new THREE.Mesh(bridgeGeo, frameMat);
+        bridge.position.set(0, 0.22, 0.02);
+        glassesGroup.add(bridge);
+
+        // Top Brow Arc Bar
+        const browGeo = new THREE.CylinderGeometry(0.045, 0.045, 2.2, 16);
+        browGeo.rotateZ(Math.PI / 2);
+        const brow = new THREE.Mesh(browGeo, frameMat);
+        brow.position.set(0, 0.72, 0.02);
+        glassesGroup.add(brow);
+
+        // Brass Hinges
+        const hingeGeo = new THREE.BoxGeometry(0.12, 0.14, 0.16);
+        const leftHinge = new THREE.Mesh(hingeGeo, brassMat);
+        leftHinge.position.set(-1.64, 0.35, -0.05);
+        glassesGroup.add(leftHinge);
+
+        const rightHinge = new THREE.Mesh(hingeGeo, brassMat);
+        rightHinge.position.set(1.64, 0.35, -0.05);
+        glassesGroup.add(rightHinge);
+
+        // Temples (Sides)
+        const templeGeo = new THREE.CylinderGeometry(0.045, 0.035, 1.9, 16);
+        templeGeo.rotateX(Math.PI / 2);
+
+        const leftTemple = new THREE.Mesh(templeGeo, frameMat);
+        leftTemple.position.set(-1.66, 0.35, -1.0);
+        leftTemple.rotation.y = -0.08;
+        glassesGroup.add(leftTemple);
+
+        const rightTemple = new THREE.Mesh(templeGeo, frameMat);
+        rightTemple.position.set(1.66, 0.35, -1.0);
+        rightTemple.rotation.y = 0.08;
+        glassesGroup.add(rightTemple);
+
+        scene.add(glassesGroup);
+
+        // Drag controls & inertia
+        let isDragging = false;
+        let prevMouseX = 0;
+        let prevMouseY = 0;
+        const defaultRotX = 0.12;
+        const defaultRotY = -0.35;
+        let targetRotationX = defaultRotX;
+        let targetRotationY = defaultRotY;
+        let autoRotate = true;
+
+        glassesGroup.rotation.x = defaultRotX;
+        glassesGroup.rotation.y = defaultRotY;
+
+        function onPointerDown(e) {
+          isDragging = true;
+          autoRotate = false;
+          prevMouseX = e.clientX || (e.touches && e.touches[0].clientX);
+          prevMouseY = e.clientY || (e.touches && e.touches[0].clientY);
+        }
+
+        function onPointerMove(e) {
+          if (!isDragging) return;
+          const currentX = e.clientX || (e.touches && e.touches[0].clientX);
+          const currentY = e.clientY || (e.touches && e.touches[0].clientY);
+          if (currentX === undefined || currentY === undefined) return;
+
+          const deltaX = currentX - prevMouseX;
+          const deltaY = currentY - prevMouseY;
+
+          targetRotationY += deltaX * 0.008;
+          targetRotationX += deltaY * 0.008;
+
+          targetRotationX = Math.max(-0.8, Math.min(0.8, targetRotationX));
+
+          prevMouseX = currentX;
+          prevMouseY = currentY;
+        }
+
+        function onPointerUp() {
+          isDragging = false;
+        }
+
+        canvas.addEventListener('mousedown', onPointerDown);
+        window.addEventListener('mousemove', onPointerMove);
+        window.addEventListener('mouseup', onPointerUp);
+
+        canvas.addEventListener('touchstart', onPointerDown, { passive: true });
+        window.addEventListener('touchmove', onPointerMove, { passive: true });
+        window.addEventListener('touchend', onPointerUp);
+
+        // Reset View button handler
+        if (resetBtn) {
+          resetBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            targetRotationX = defaultRotX;
+            targetRotationY = defaultRotY;
+            autoRotate = true;
+          });
+        }
+
+        // Render Loop
+        function animate() {
+          requestAnimationFrame(animate);
+
+          if (autoRotate && !isDragging) {
+            targetRotationY += 0.003;
+          }
+
+          glassesGroup.rotation.y += (targetRotationY - glassesGroup.rotation.y) * 0.08;
+          glassesGroup.rotation.x += (targetRotationX - glassesGroup.rotation.x) * 0.08;
+
+          renderer.render(scene, camera);
+        }
+        animate();
+
+        // Responsive resize
+        window.addEventListener('resize', () => {
+          if (canvas.parentElement) {
+            const newW = canvas.parentElement.clientWidth;
+            camera.aspect = newW / height;
+            camera.updateProjectionMatrix();
+            renderer.setSize(newW, height);
+          }
+        });
+      }
+    });
   </script>
 </body>
 </html>
